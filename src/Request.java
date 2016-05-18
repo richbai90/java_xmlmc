@@ -12,21 +12,26 @@ import java.io.StringWriter;
 /*****************************************
  * Author : rich
  * Date : 3/16/16
- * Assignment: RequestBuilder
+ * Assignment: Request
  ******************************************/
-public class RequestBuilder {
+public class Request {
     private Document xml;
     private Element root;
     private Element params;
     private boolean usesParams = false;
 
-    RequestBuilder(String service, String method) throws ParserConfigurationException {
+    Request(String service, String method) throws ParserConfigurationException {
+        //create a new builder
         DocumentBuilderFactory builderFactory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = builderFactory.newDocumentBuilder();
+        //create the document
         xml = builder.newDocument();
+        //create the root element
         root = xml.createElement("methodCall");
         xml.appendChild(root);
+        //create the params element
         params = xml.createElement("params");
+        //add the service and method attributes to the root element
         setService(service);
         setMethod(method);
     }
@@ -39,34 +44,36 @@ public class RequestBuilder {
         root.setAttribute("method", method);
     }
 
-    public void setParam(String attribute, String value) {
+    public void setParam(String param, String value) {
+        //check if params some params have already been set
         if (!usesParams) {
             root.appendChild(params);
             usesParams = true;
         }
-        Element param = xml.createElement(attribute);
-        param.setTextContent(value);
-        params.appendChild(param);
+        Element parameter = xml.createElement(param);
+        parameter.setTextContent(value);
+        params.appendChild(parameter);
     }
 
-    public void setParam(String attribute) {
+    public void setParam(String param) {
         if (!usesParams) {
             root.appendChild(params);
             usesParams = true;
         }
-        Element param = xml.createElement(attribute);
-        params.appendChild(param);
+        Element parameter = xml.createElement(param);
+        params.appendChild(parameter);
     }
 
-    public ComplexParam prepComplexParam(String attribute) throws ParserConfigurationException {
+    public ComplexParam prepComplexParam(String param) throws ParserConfigurationException {
         if (!usesParams) {
             root.appendChild(params);
             usesParams = true;
         }
-        return new ComplexParam(attribute, xml);
+        return new ComplexParam(param, xml);
     }
 
     public String getXmlString() throws TransformerException {
+        //parse the document to a string and return the string
         DOMSource domSource = new DOMSource(xml);
         StringWriter writer = new StringWriter();
         StreamResult result = new StreamResult(writer);
@@ -77,6 +84,7 @@ public class RequestBuilder {
     }
 
     public Document getXml() {
+        //return the xml document
         return xml;
     }
 }

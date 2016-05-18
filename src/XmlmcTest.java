@@ -1,14 +1,7 @@
-import org.w3c.dom.Document;
-
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
 import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.IOException;
-import java.io.StringWriter;
+import java.util.ArrayList;
 
 /*****************************************
  * Author : rich
@@ -17,8 +10,17 @@ import java.io.StringWriter;
  ******************************************/
 public class XmlmcTest {
     public static void main(String[] args) throws ParserConfigurationException, TransformerException, IOException {
-        ApiSession session = Xmlmc.newSession("10.3.200.46","5015");
-        session.analystLogon("admin","");
-        session.logoff();
+        ApiSession session = XmlMethodCall.newSession("192.168.1.30","5015");
+        if(session.analystLogon("admin","")) {
+            ResponseHandler sessionInfo = session.getSessionInfo();
+            System.out.println(sessionInfo.getParameter("analystName"));
+            System.out.println(session.getSessionId());
+            session.logoff();
+        } else {
+            System.out.println(session.getLastError());
+        }
+
     }
 }
+
+

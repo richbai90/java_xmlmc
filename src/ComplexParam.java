@@ -9,31 +9,31 @@ import javax.xml.parsers.ParserConfigurationException;
  ******************************************/
 public class ComplexParam {
     private Element root;
-    private Element attr;
+    private Element param;
     private Document xml;
     private Element params;
 
     public void update() {
-        params.appendChild(attr);
+        params.appendChild(param);
     }
 
     public Element getAttr() {
-        return attr;
+        return param;
     }
 
     public Element getRoot() {
         return root;
     }
 
-    public ComplexParam(String attr, Document xml) throws ParserConfigurationException {
-        this.attr = xml.createElement(attr);
+    public ComplexParam(String param, Document xml) throws ParserConfigurationException {
+        this.param = xml.createElement(param);
         this.xml = xml;
         root = xml.getDocumentElement();
         params = (Element) root.getFirstChild();
     }
 
-    public ComplexParam(Element attr, Document xml) throws ParserConfigurationException {
-        this.attr = attr;
+    public ComplexParam(Element param, Document xml) throws ParserConfigurationException {
+        this.param = param;
         this.xml = xml;
         root = xml.getDocumentElement();
         params = (Element) root.getFirstChild();
@@ -42,24 +42,24 @@ public class ComplexParam {
 
     public ComplexParam createChild(String nodeName) throws ParserConfigurationException {
         Element child = xml.createElement(nodeName);
-        if (attr.getLastChild() != null) {
-            attr.getLastChild().appendChild(child);
+        if (param.getLastChild() != null) {
+            param.getLastChild().appendChild(child);
         } else {
-            attr.appendChild(child);
+            param.appendChild(child);
         }
 
-        return new ComplexParam(attr, xml);
+        return new ComplexParam(param, xml);
     }
 
 
     public ComplexParam setNodeAttribute(String name, String value) throws DOMException, ParserConfigurationException {
-        attr.setAttribute(name, value);
-        return new ComplexParam(attr, xml);
+        param.setAttribute(name, value);
+        return new ComplexParam(param, xml);
     }
 
 
     public ComplexParam removeNodeAttribute(String name) throws DOMException, ParserConfigurationException {
-        attr.removeAttribute(name);
-        return new ComplexParam(attr, xml);
+        param.removeAttribute(name);
+        return new ComplexParam(param, xml);
     }
 }
