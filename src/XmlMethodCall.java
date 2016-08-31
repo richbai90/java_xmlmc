@@ -1,37 +1,55 @@
-import org.jetbrains.annotations.Contract;
+import java.net.MalformedURLException;
 
-import javax.xml.parsers.ParserConfigurationException;
-import java.io.IOException;
-import java.net.URL;
-import java.net.URLConnection;
 
 /**
- * Xmlmc.java
- * Purpose: Provide an interface to all the Xmlmc APIs
+ * XmlMethodCall.java
+ * Purpose: Provide an interface to all the Xmlmc APIs.
  *
+ * The XmlMethodCall class provides easy access to all the Xmlmc API services and their respective methods.
+ * It handles opening and closing the connection to the server automatically and parses the xml responses from the server
+ * into easy to navigate ArrayLists or Hashes. It also manages the session cookie, both sending and receiving, as well
+ * as updating as necessary, automatically. Interfacing with the API is best done through this class since it handles all the details automatically.
+ *
+ *<div><p>
+ * Usage: <pre>{@code
+ * xmlmc = new XmlMethodCall("localhost");
+ * xmlmc.session().analystLogon("admin", "password");
+ * xmlmc.helpdesk().acceptCalls("1557","1998");
+ * xmlmc.analystLogoff();
+ * }</pre>
+ *</div>
  * @author Rich Gordon
- * @version 1.0.0 03/28/2016
+ * @version 1.1.0 08/29/2016
  */
+
 public class XmlMethodCall {
+    private Connection connection;
 
-    protected XmlMethodCall() {}
-
-
-//    public static Request newRequest(String service, String method) throws ParserConfigurationException {
-//        return new Request(service, method);
-//    }
-
-
-    public static ApiSession newSession(String server, String port) throws IOException, ParserConfigurationException {
-        return new ApiSession(server, port);
+    /**
+     * Creates a connection to the server that can be used to send requests over the wire.
+     * @param server The hostname or ip address of the server you wish to send requests to
+     * @throws MalformedURLException
+     */
+    public XmlMethodCall(String server) throws MalformedURLException {
+        connection = new Connection(server);
     }
 
-
-    public static ApiSession newSession() throws IOException, ParserConfigurationException {
-        return new ApiSession();
+    /**
+     * Provide access to the session methods from the XmlMethodCall object
+     * @return an instance of the Session object.
+     * @see Session
+     */
+    public Session session() {
+        return new Session(connection);
     }
 
-    public static HelpDesk helpDesk(ApiSession session) {
-        return new HelpDesk(session);
+    /**
+     * Provide access to the helpdesk methods from the XmlMethodCall object
+     * @return an instance of the Helpdesk object
+     * @see Helpdesk
+     */
+    public Helpdesk helpdesk() {
+        return new Helpdesk(connection);
     }
+
 }

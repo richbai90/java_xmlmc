@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java_xmlmc.iml" filepath="$PROJECT_DIR$/java_xmlmc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlmc.iml" filepath="$PROJECT_DIR$/xmlmc.iml" />
     </modules>
   </component>
 </project>

@@ -10,14 +10,13 @@ import java.util.ArrayList;
  ******************************************/
 public class XmlmcTest {
     public static void main(String[] args) throws ParserConfigurationException, TransformerException, IOException {
-        ApiSession session = XmlMethodCall.newSession("192.168.1.30","5015");
-        if(session.analystLogon("admin","")) {
-            ResponseHandler sessionInfo = session.getSessionInfo();
-            System.out.println(sessionInfo.getParameter("analystName"));
-            System.out.println(session.getSessionId());
-            session.logoff();
-        } else {
-            System.out.println(session.getLastError());
+        XmlMethodCall xmlmc = new XmlMethodCall("192.168.1.u");
+        Response logon = xmlmc.session().analystLogon("admin","");
+        if(logon.isSuccessful()) {
+            System.out.println(logon);
+            System.out.println(logon.getParameters());
+            Response logoff = xmlmc.session().analystLogoff();
+            System.out.println(logoff);
         }
 
     }
