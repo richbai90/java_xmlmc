@@ -1,7 +1,9 @@
+import xmlmc.Response;
+import xmlmc.XmlMethodCall;
+
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.TransformerException;
 import java.io.IOException;
-import java.util.ArrayList;
 
 /*****************************************
  * Author : rich
@@ -11,8 +13,8 @@ import java.util.ArrayList;
 public class XmlmcTest {
     public static void main(String[] args) throws ParserConfigurationException, TransformerException, IOException {
         XmlMethodCall xmlmc = new XmlMethodCall("192.168.1.u");
-        Response logon = xmlmc.session().analystLogon("admin","");
-        if(logon.isSuccessful()) {
+        Response logon = xmlmc.session().analystLogon("admin", "");
+        if (logon.isSuccessful()) {
             System.out.println(logon);
             System.out.println(logon.getParameters());
             Response logoff = xmlmc.session().analystLogoff();
