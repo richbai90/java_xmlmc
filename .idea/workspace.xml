@@ -2,195 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b641ea1-09be-4ac1-a227-7c5c3cab3435" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/BinaryDecoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/BinaryEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/CharEncoding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/Charsets.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/Decoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/DecoderException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/Encoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/EncoderException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/StringDecoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/StringEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/StringEncoderComparator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base32.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base32InputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base32OutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base64.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base64InputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Base64OutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/BaseNCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/BaseNCodecInputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/BaseNCodecOutputStream.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/BinaryCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/CharSequenceUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/Hex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/StringUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/binary/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/B64.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/Crypt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/DigestUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/HmacAlgorithms.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/HmacUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/Md5Crypt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/MessageDigestAlgorithms.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/Sha2Crypt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/UnixCrypt.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/digest/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/AbstractCaverphone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Caverphone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Caverphone1.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Caverphone2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/ColognePhonetic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/DaitchMokotoffSoundex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/DoubleMetaphone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/MatchRatingApproachEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Metaphone.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Nysiis.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/RefinedSoundex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/Soundex.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/SoundexUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/BeiderMorseEncoder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/Lang.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/Languages.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/NameType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/PhoneticEngine.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/ResourceConstants.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/Rule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/RuleType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/bm/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/language/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/BCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/QCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/QuotedPrintableCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/RFC1522Codec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/URLCodec.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/net/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/overview.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/apache/commons/codec/package.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/types/Call.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/types/EmbeddedFileAttachment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/types/SwType.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/ComplexParam.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Connection.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Helpdesk.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Helpers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Request.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Response.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/Session.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/XmlMethodCall.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/ComplexParam.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Connection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Helpdesk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Request.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Response.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/Session.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/XmlMethodCall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/XmlmcTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/ComplexParam.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Connection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Helpdesk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Request.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Response.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/Session.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/XmlMethodCall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/class-use/XmlmcTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-13.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-14.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-15.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index-files/index-9.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/docs/stylesheet.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/ComplexParam.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Connection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Helpdesk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Request.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Response.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/Session.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/XmlMethodCall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/XmlmcTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/allclasses-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/allclasses-noframe.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/ComplexParam.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Connection.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Helpdesk.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Helpers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Request.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Response.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/Session.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/XmlMethodCall.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/class-use/XmlmcTest.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/constant-values.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/deprecated-list.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/help-doc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-10.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-11.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-12.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-13.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-14.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-15.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-4.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-5.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-6.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-7.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-8.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index-files/index-9.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/overview-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/package-frame.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/package-list" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/package-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/package-tree.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/package-use.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/docs/stylesheet.css" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ComplexParam.java" afterPath="$PROJECT_DIR$/src/xmlmc/ComplexParam.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Connection.java" afterPath="$PROJECT_DIR$/src/xmlmc/Connection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Helpdesk.java" afterPath="$PROJECT_DIR$/src/xmlmc/api/Helpdesk.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Helpers.java" afterPath="$PROJECT_DIR$/src/xmlmc/Helpers.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Request.java" afterPath="$PROJECT_DIR$/src/xmlmc/Request.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Response.java" afterPath="$PROJECT_DIR$/src/xmlmc/Response.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Service.java" afterPath="$PROJECT_DIR$/src/xmlmc/api/Service.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Session.java" afterPath="$PROJECT_DIR$/src/xmlmc/api/Session.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/XmlMethodCall.java" afterPath="$PROJECT_DIR$/src/xmlmc/XmlMethodCall.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/XmlmcTest.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/XmlmcTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmlmc/docs" afterPath="$PROJECT_DIR$/src/xmlmc/docs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/XmlmcTest.java" afterPath="$PROJECT_DIR$/src/XmlmcTest.java" />
     </list>
     <ignored path="java_xmlmc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -228,8 +41,8 @@
       <file leaf-file-name="Helpdesk.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xmlmc/api/Helpdesk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="631" column="39" selection-start-line="631" selection-start-column="39" selection-end-line="631" selection-end-column="39" />
+            <state relative-caret-position="730">
+              <caret line="651" column="0" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -471,68 +284,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="types" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1044,12 +795,12 @@
       <workItem from="1472502458556" duration="5206000" />
       <workItem from="1472568846872" duration="23255000" />
       <workItem from="1472762970343" duration="3544000" />
-      <workItem from="1472820471652" duration="20440000" />
+      <workItem from="1472820471652" duration="21889000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108952000" />
+    <option name="totallyTimeSpent" value="110401000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1062,7 +813,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="720" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1072,7 +823,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24307692" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1535,8 +1286,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmlmc/api/Helpdesk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="631" column="39" selection-start-line="631" selection-start-column="39" selection-end-line="631" selection-end-column="39" />
+        <state relative-caret-position="730">
+          <caret line="651" column="0" selection-start-line="651" selection-start-column="0" selection-end-line="651" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1609,6 +1360,18 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>xmlmc</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
