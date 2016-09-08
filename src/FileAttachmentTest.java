@@ -12,9 +12,9 @@ import javax.xml.parsers.ParserConfigurationException;
 public class FileAttachmentTest {
     public static void main(String[] args) throws Exception {
         Request myRequest = new Request("helpdesk","fileattach");
-        EmbeddedFileAttachment fileAttachment = new EmbeddedFileAttachment();
-        ComplexParam fa = fileAttachment.parseFile("/Users/rich/Documents/test.m");
-        myRequest.addComplexParam(fa);
+        EmbeddedFileAttachment fileAttachment = new EmbeddedFileAttachment("/Users/rich/Documents/test.m");
+//        ComplexParam fa = fileAttachment.parseFile("/Users/rich/Documents/test.m");
+        myRequest.setParam(fileAttachment);
         System.out.println(myRequest);
     }
 }

@@ -16,9 +16,10 @@ import java.util.HashMap;
 
 /**
  * xmlmc.Response.java
- *
+ * <p>
  * Allows to easily parse relevant information from an xml response from the server.
  * Automatically invoked from the xmlmc.Connection class
+ *
  * @see Connection#sendRequest(Request)
  */
 public class Response {
@@ -34,6 +35,7 @@ public class Response {
      * Will attempt to parse an xml response. If the response is not valid xml no error is thrown but the successful flag
      * is set to false and the status is set to network failure, since the server will only ever return valid xml, even in
      * the case of a malformed request.
+     *
      * @param response The xml response to parse
      */
     Response(String response) {
@@ -58,8 +60,11 @@ public class Response {
     }
 
     private void parseRecordData() {
-        Node record = response.getElementsByTagName("record").item(0);
-        this.record = Helpers.nodesAsMap(record);
+        NodeList records = response.getElementsByTagName("record");
+        if (records.getLength() > 0) {
+            Node _record = records.item(0);
+            this.record = Helpers.nodesAsMap(_record);
+        }
     }
 
     private String parseStatus() {
@@ -68,7 +73,7 @@ public class Response {
 
     private void parseRowData() {
         NodeList rowNodes = response.getElementsByTagName("row");
-        if(rowNodes != null) {
+        if (rowNodes != null) {
             ArrayList<Node> rowList = Helpers.nodesAsList(rowNodes);
             for (Node row :
                     rowList) {
@@ -79,6 +84,7 @@ public class Response {
 
     /**
      * Get the value of returned parameter by name
+     *
      * @param parameter name of the response param to get
      * @return value of the parameter as a String
      * @throws NullPointerException if the parameter by that name was not found.
@@ -98,6 +104,7 @@ public class Response {
 
     /**
      * Get a list of all available parameters as a hashmap in the format {@code paramName => paramValue}
+     *
      * @return HashMap {@code {paramName => paramValue} }
      */
     public HashMap<String, String> getParameters() {
@@ -108,6 +115,7 @@ public class Response {
 
     /**
      * If the server returned an error get the error string. In the case of malformed xml return the rawResponse
+     *
      * @return error message
      */
     public String getLastError() {
@@ -116,6 +124,7 @@ public class Response {
 
     /**
      * Return the status code for the resonse ok | fail | network failure
+     *
      * @return response status
      */
     public String getStatus() {
@@ -129,6 +138,7 @@ public class Response {
     /**
      * If we are expecting rows from this request return them in an ArrayList
      * <strong>This is not fully implemented</strong>
+     *
      * @return ArrayList of XmlNodes
      */
     public ArrayList<HashMap<String, String>> getRows() {
@@ -138,6 +148,7 @@ public class Response {
     /**
      * Return a specific row
      * <strong>This is not fully implemented</strong>
+     *
      * @param index row to get starting at 0 = row 1
      * @return Xml Node
      */
@@ -151,6 +162,7 @@ public class Response {
 
     /**
      * Return the raw response of the request as a string
+     *
      * @return response as a string
      */
     public String toString() {
@@ -159,6 +171,7 @@ public class Response {
 
     /**
      * Method to check that the request was successful
+     *
      * @return true || false if the method was successful
      */
     public boolean isSuccessful() {
