@@ -422,11 +422,12 @@ public class Helpdesk extends Service {
     }
 
     /**
-     * There is still a lot to do, this isn't ready yet.
+     * Log and accept a new call
      *
-     * @param call
-     * @return
-     * @deprecated
+     * @param call A Call object representing the call to be logged
+     * @return {@link Request}
+     * @throws IOException
+     * @see Helpdesk#logNewCall
      */
     public Response logAndAcceptNewCall(Call call) throws IOException {
         Request request = generateRequest("logAndAcceptNewCall");
@@ -435,35 +436,42 @@ public class Helpdesk extends Service {
     }
 
     /**
-     * @param call
-     * @param groupId
-     * @see Helpdesk#logAndAcceptNewCall(Call)
-     * @deprecated
+     * Log an assign a call to a specific group
+     * @param call A call object representing the call to be logged
+     * @param groupId The group ID of the group you wish to assign the call to
+     * @return {@link Response}
+     * @throws IOException
+     * @see Helpdesk#logAndAssignNewCall(Call, String)
      */
     public Response logAndAssignNewCall(Call call, String groupId) throws IOException {
         Request request = generateRequest("logAndAssignNewCall");
-
+        call.assignTo(groupId);
+        request.setParam(call);
         return invoke(request);
     }
 
     /**
-     * @param call
-     * @param groupId
-     * @see Helpdesk#logAndAcceptNewCall(Call)
-     * @deprecated
+     * Log an assign a new call to an analyst
+     * @param call A Call object representing the call to be logged
+     * @param groupId the id of the group you wish to assign the call to
+     * @param analystId the id of the analyst you wish to assign the call to
+     * @return {@link Response}
+     * @throws IOException
      */
     public Response logAndAssignNewCall(Call call, String groupId, String analystId) throws IOException {
         Request request = generateRequest("logAndAssignNewCall");
-
+        call.assignTo(groupId,analystId);
+        request.setParam(call);
         return invoke(request);
     }
 
     /**
-     * There is still a lot to do, this isn't ready yet.
+     * Log and assign a new call to yourself without accepting it.
      *
-     * @param call
-     * @return
-     * @deprecated
+     * @param call A Call object representing a call to be logged
+     * @return {@link Response}
+     * @throws IOException
+     * @see Helpdesk#logNewCall(Call)
      */
     public Response logAndTakeNewCall(Call call) throws IOException {
         Request request = generateRequest("logAndTakeNewCall");
@@ -472,14 +480,30 @@ public class Helpdesk extends Service {
     }
 
     /**
-     * There is still a lot to do, this isn't ready yet.
+     * Create a call and defer the logging of it until later
      *
-     * @param call
-     * @return
-     * @deprecated
+     * @param call Call object representing the call to be logged
+     * @param logDate The date and time to log the call in the format YYYY-MM-DDThh:mm:ss see:
+     *                <a href = "http://www.w3schools.com/xml/schema_dtypes_date.asp">W3Schools</a> for more details
+     * @param groupId The group the call is assigned to when it logs
+     * @return {@link Request}
      */
     public Response logDeferredCall(Call call, String logDate, String groupId) throws IOException {
         Request request = generateRequest("logAndTakeNewCall");
+        call.assignTo(groupId);
+        call.setLogDate(logDate);
+        request.setParam(call);
+        return invoke(request);
+    }
+
+    /**
+     * Log a new call
+     * @param call A Call object representing the call to be logged
+     * @return {@link Response}
+     * @throws IOException
+     */
+    public Response logNewCall(Call call) throws IOException {
+        Request request = generateRequest("logNewCall");
         request.setParam(call);
         return invoke(request);
     }

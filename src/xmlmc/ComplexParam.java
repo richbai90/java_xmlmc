@@ -157,4 +157,16 @@ public class ComplexParam {
         parameter.setTextContent(value);
         param.appendChild(parameter);
     }
+
+    public void addComplexParameter(String parent, ComplexParam parameter) {
+        Node param = xml.importNode(parameter.getRootNode(), true);
+        Element el_parent = xml.createElement(parent);
+        el_parent.appendChild(param);
+        this.param.appendChild(el_parent);
+    }
+
+    public void addComplexParameter(ComplexParam parameter) {
+        Node param = xml.importNode(parameter.getRootNode(),true);
+        this.param.appendChild(param);
+    }
 }

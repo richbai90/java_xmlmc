@@ -8,14 +8,17 @@ import xmlmc.types.SwType;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.*;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import java.io.StringWriter;
 
 /**
  * xmlmc.Request.java
- *
+ * <p>
  * Represents a request to send to the server. Handles the building of xml in the appropriate structure through
  * simple method calls.
  */
@@ -27,8 +30,9 @@ public class Request {
 
     /**
      * Generate a new request
+     *
      * @param service api.Service of the xmlmc API to invoke
-     * @param method method of the specified service to invoke
+     * @param method  method of the specified service to invoke
      */
     public Request(String service, String method) {
         //create a new builder
@@ -65,6 +69,7 @@ public class Request {
     /**
      * Create a simple parameter. When converted to a string it looks like
      * <pre >{@code <param>Value</param>}</pre>
+     *
      * @param param The name of the param element
      * @param value The value the parameter should hold
      */
@@ -81,6 +86,7 @@ public class Request {
 
     /**
      * Create an empty parameter
+     *
      * @param param The name of the param element
      * @see Request#setParam(String, String)
      */
@@ -100,10 +106,11 @@ public class Request {
     /**
      * Create complex params. When converted to a string they take the format
      * <pre >{@code <param>
-     *         <something>
-     *             Value
-     *         </something>
+     * <something>
+     * Value
+     * </something>
      * </param>}</pre>
+     *
      * @param param Name of the parent xml element for the parameter
      * @return new {@link ComplexParam}
      */
@@ -116,13 +123,18 @@ public class Request {
     }
 
     private void addComplexParam(ComplexParam param) {
-        if(!usesParams) {
+        boolean paramIsParams = param.getRoot().getNodeName().equals("params");
+        if (paramIsParams) {
+            params = (Element) xml.importNode(param.getRootNode(), true);
+        } else {
+            Node parameter = xml.importNode(param.getRootNode(), true);
+            params.appendChild(parameter);
+        }
+        if (!usesParams) {
             root.appendChild(params);
             usesParams = true;
         }
 
-        Node parameter = xml.importNode(param.getRootNode(),true);
-        params.appendChild(parameter);
 
     }
 
@@ -150,14 +162,15 @@ public class Request {
 
     /**
      * Return a string representation of the xml
+     *
      * @return Xml String of the format
-     *     <pre >{@code <methodCall service="service" method="method">
-     *          <params>
-     *              <paramName>
-     *                  Value
-     *              </paramName>
-     *          </params>
-     *     </methodCall>}</pre>
+     * <pre >{@code <methodCall service="service" method="method">
+     * <params>
+     * <paramName>
+     * Value
+     * </paramName>
+     * </params>
+     * </methodCall>}</pre>
      */
     public String toString() {
         return getXmlString();
@@ -165,6 +178,7 @@ public class Request {
 
     /**
      * Return the actual xml Document object
+     *
      * @return Document object of the request. If you want the xml string, use the {@link Request#toString()} method
      */
     public Document getXmlDocument() {

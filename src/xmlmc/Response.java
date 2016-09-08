@@ -26,8 +26,9 @@ public class Response {
     private String xmlResponse;
     private String lastError;
     private String status;
-    private ArrayList<Node> rows;
+    private ArrayList<HashMap<String, String>> rows;
     private boolean successful;
+    private HashMap<String, String> record;
 
     /**
      * Will attempt to parse an xml response. If the response is not valid xml no error is thrown but the successful flag
@@ -46,6 +47,7 @@ public class Response {
             this.successful = status.equals("ok");
             lastError = (status.equalsIgnoreCase("ok")) ? "" : this.response.getElementsByTagName("error").item(0).getTextContent();
             parseRowData();
+            parseRecordData();
         } catch (ParserConfigurationException | IOException e) {
             e.printStackTrace();
         } catch (SAXException e) {
@@ -55,13 +57,24 @@ public class Response {
         }
     }
 
+    private void parseRecordData() {
+        Node record = response.getElementsByTagName("record").item(0);
+        this.record = Helpers.nodesAsMap(record);
+    }
+
     private String parseStatus() {
         return response.getDocumentElement().getAttribute("status");
     }
 
     private void parseRowData() {
         NodeList rowNodes = response.getElementsByTagName("row");
-        rows = Helpers.nodesAsList(rowNodes);
+        if(rowNodes != null) {
+            ArrayList<Node> rowList = Helpers.nodesAsList(rowNodes);
+            for (Node row :
+                    rowList) {
+                rows.add(Helpers.nodesAsMap(row));
+            }
+        }
     }
 
     /**
@@ -118,7 +131,7 @@ public class Response {
      * <strong>This is not fully implemented</strong>
      * @return ArrayList of XmlNodes
      */
-    public ArrayList<Node> getRows() {
+    public ArrayList<HashMap<String, String>> getRows() {
         return rows;
     }
 
@@ -128,8 +141,12 @@ public class Response {
      * @param index row to get starting at 0 = row 1
      * @return Xml Node
      */
-    public Node getRow(int index) {
+    public HashMap<String, String> getRow(int index) {
         return rows.get(index);
+    }
+
+    public HashMap<String, String> getRecord() {
+        return record;
     }
 
     /**

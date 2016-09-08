@@ -58,4 +58,9 @@ public class Helpers {
 
         return nodeMap;
     }
+
+    public static HashMap<String, String> nodesAsMap(Node node) {
+        NodeList children = node.getChildNodes();
+        return nodesAsMap(children);
+    }
 }

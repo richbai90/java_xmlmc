@@ -1,5 +1,6 @@
 package xmlmc;
 
+import xmlmc.api.Data;
 import xmlmc.api.Helpdesk;
 import xmlmc.api.Session;
 
@@ -55,6 +56,15 @@ public class XmlMethodCall {
      */
     public Helpdesk helpdesk() {
         return new Helpdesk(connection);
+    }
+
+    /**
+     * Provide access to the data methods from the XmlMethodCall object
+     * @return an instance of the api.Data object
+     * @see Data
+     */
+    public Data data() {
+        return new Data(connection);
     }
 
 }
