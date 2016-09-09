@@ -350,7 +350,7 @@ public class Call implements SwType {
     /**
      * Attach a file when logging the call.
      *
-     * @param fileAttachment the complete path to a file you wish to attach. Java must be able to access this path.
+     * @param fileName the complete path to a file you wish to attach. Java must be able to access this path.
      */
     public void setFileAttachment(String fileName) {
         this.fileAttachment = fileName;
