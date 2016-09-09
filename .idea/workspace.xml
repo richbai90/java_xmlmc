@@ -10,21 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b641ea1-09be-4ac1-a227-7c5c3cab3435" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/xmlmc_jar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/tests/xmlmc/HelpersTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/tests/xmlmc/RequestTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/xmlmc/tests/xmlmc/ResponseTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/FileAttachmentTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/FileAttachmentTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/xmlmc/Request.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/xmlmc/Request.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/xmlmc/types/EmbeddedFileAttachment.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/xmlmc/types/EmbeddedFileAttachment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/xmlmc/xmlmc/ComplexParamTest.class" afterPath="$PROJECT_DIR$/out/test/xmlmc/xmlmc/ComplexParamTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmlmc/Request.java" afterPath="$PROJECT_DIR$/src/xmlmc/Request.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmlmc/Response.java" afterPath="$PROJECT_DIR$/src/xmlmc/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmlmc/tests/xmlmc/ComplexParamTest.java" afterPath="$PROJECT_DIR$/src/xmlmc/tests/xmlmc/ComplexParamTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/xmlmc/types/EmbeddedFileAttachment.java" afterPath="$PROJECT_DIR$/src/xmlmc/types/EmbeddedFileAttachment.java" />
     </list>
     <ignored path="java_xmlmc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -171,8 +157,8 @@
       <file leaf-file-name="ResponseTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/xmlmc/tests/xmlmc/ResponseTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+            <state relative-caret-position="540">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1051,14 +1037,11 @@
       <workItem from="1472762970343" duration="3544000" />
       <workItem from="1472820471652" duration="34408000" />
       <workItem from="1473278561055" duration="27000" />
-      <workItem from="1473345461166" duration="30445000" />
+      <workItem from="1473345461166" duration="30574000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RequestTest - 2016.09.09 at 08h 45m 47s.xml">
-      <configuration name="RequestTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RequestTest - 2016.09.09 at 08h 46m 40s.xml">
       <configuration name="RequestTest" configurationId="JUnit" />
     </history-entry>
@@ -1086,9 +1069,12 @@
     <history-entry file="ResponseTest - 2016.09.09 at 10h 32m 17s.xml">
       <configuration name="ResponseTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ResponseTest - 2016.09.09 at 10h 32m 58s.xml">
+      <configuration name="ResponseTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153392000" />
+    <option name="totallyTimeSpent" value="153521000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1101,7 +1087,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="720" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1111,8 +1097,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24153847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29692307" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24153847" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1292407" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1623,8 +1609,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/xmlmc/tests/xmlmc/ResponseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="58" column="57" selection-start-line="58" selection-start-column="57" selection-end-line="58" selection-end-column="57" />
+        <state relative-caret-position="540">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
