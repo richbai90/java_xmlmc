@@ -36,7 +36,7 @@ public class Call implements SwType {
     private String impact;
     private String urgency;
     private String sla;
-    private EmbeddedFileAttachment fileAttachment;
+    private String fileAttachment;
     private String customerName;
     private String organisation;
     private String groupId;
@@ -66,6 +66,7 @@ public class Call implements SwType {
         CLOSED_WITH_CHARGE(18);
 
         public int value;
+
         Status(int value) {
             this.value = value;
         }
@@ -73,8 +74,9 @@ public class Call implements SwType {
 
     /**
      * Instantiate the call
-     * @param xmlmc The XmlMethodCall object that you are currently using. Required for database queries that are performed
-     *              automatically.
+     *
+     * @param xmlmc     The XmlMethodCall object that you are currently using. Required for database queries that are performed
+     *                  automatically.
      * @param callClass The class of the call you wish to log
      * @throws ParserConfigurationException
      */
@@ -87,15 +89,16 @@ public class Call implements SwType {
 
     /**
      * The buildXml method responsible for taking all the fields and parsing them into a ComplexParam in the correct order
+     *
      * @return An xml object whose string representation may look like this
      * <div>
-     *     <pre>
+     * <pre>{@code
      *         <params>
      *             <callClass>Incident</callClass>
      *             <slaName>P1</slaName>
      *             ...other options
      *         </params>
-     *     </pre>
+     *     }</pre>
      * </div>
      */
     @Override
@@ -119,8 +122,8 @@ public class Call implements SwType {
         if (condition != null) {
             param.addParameter("condition", condition.toString());
         }
-        
-        if(logDate != null) {
+
+        if (logDate != null) {
             param.addParameter("logDate", logDate);
         }
 
@@ -140,19 +143,24 @@ public class Call implements SwType {
         param.addParameter("updateSource", updateSource);
 
         if (fileAttachment != null) {
-            param.addComplexParameter(fileAttachment.buildXml());
+            try {
+                EmbeddedFileAttachment embeddedFileAttachment = new EmbeddedFileAttachment(fileAttachment);
+                param.addComplexParameter(embeddedFileAttachment.buildXml());
+            } catch (ParserConfigurationException e) {
+                e.printStackTrace();
+            }
         }
 
-        if(summary != null) {
-            addAdditionalCallValue("opencall", "itsm_title", summary);    
+        if (summary != null) {
+            addAdditionalCallValue("opencall", "itsm_title", summary);
         }
-        
-        if(organisation != null) {
-            addAdditionalCallValue("opencall", "companyname", organisation);   
+
+        if (organisation != null) {
+            addAdditionalCallValue("opencall", "companyname", organisation);
         }
-        
-        if(status != null) {
-            addAdditionalCallValue("opencall","status",Integer.toString(status.value));
+
+        if (status != null) {
+            addAdditionalCallValue("opencall", "status", Integer.toString(status.value));
         }
 
         try {
@@ -210,9 +218,10 @@ public class Call implements SwType {
 
     /**
      * Provides the ability to add additional call values other than those explicitly provided
-     * @param table table name you wish to populate
+     *
+     * @param table  table name you wish to populate
      * @param column column in the table you wish to populate
-     * @param value value you wish to populate
+     * @param value  value you wish to populate
      */
     public void addAdditionalCallValue(String table, String column, String value) {
         Map<String, String> tbl = (additonalCallValues.containsKey(table)) ? additonalCallValues.get(table) : new HashMap<>();
@@ -226,6 +235,7 @@ public class Call implements SwType {
     /**
      * If you know the priority ID of the call you can specify it directly. Otherwise we will attempt to use sql queries
      * to infer what the priority should be.
+     *
      * @param priority
      */
     public void setPriority(String priority) {
@@ -256,6 +266,7 @@ public class Call implements SwType {
     /**
      * Provide a short description of the call. If this value is set and description is not set, description will be populated
      * with the value from summary.
+     *
      * @param summary Short description of the call
      */
     public void setSummary(String summary) {
@@ -264,6 +275,7 @@ public class Call implements SwType {
 
     /**
      * Provide a long description of the problem.
+     *
      * @param description problem text
      */
     public void setDescription(String description) {
@@ -273,6 +285,7 @@ public class Call implements SwType {
     /**
      * If you know what the cost center should be you can specify it directly. Otherwise we will attempt to infer this
      * information from the customer selection if it is available. In this case, only set the customer, do not use this method.
+     *
      * @param costCenter Cost center for the call
      */
     public void setCostCenter(String costCenter) {
@@ -281,6 +294,7 @@ public class Call implements SwType {
 
     /**
      * Add a problem profile to the call
+     *
      * @param probCode Problem Profile Short Code
      */
     public void setProbCode(String probCode) {
@@ -290,6 +304,7 @@ public class Call implements SwType {
     /**
      * If you know what the site should be, you can specify it directly. Otherwise we will attempt to infer this information
      * from the customer selection if it is available. In this case, only set the customer do not use this method.
+     *
      * @param site Site for the call
      */
     public void setSite(String site) {
@@ -298,6 +313,7 @@ public class Call implements SwType {
 
     /**
      * Set the call condition
+     *
      * @param condition Numerical representation of the condition to set
      */
     public void setCondition(int condition) {
@@ -306,6 +322,7 @@ public class Call implements SwType {
 
     /**
      * Set the amount of time spent in minutes, on this call. If this is not set, the default is 5 minutes.
+     *
      * @param timeSpent Amount of time spent on the call in minutes.
      */
     public void setTimeSpent(int timeSpent) {
@@ -314,6 +331,7 @@ public class Call implements SwType {
 
     /**
      * Set a custom update code for the first diary entry. If this is not set the default is API
+     *
      * @param updateCode
      */
     public void setUpdateCode(String updateCode) {
@@ -322,6 +340,7 @@ public class Call implements SwType {
 
     /**
      * Provide a custom update source for the first diary entry. If this is not set the default is Xmlmc API
+     *
      * @param updateSource
      */
     public void setUpdateSource(String updateSource) {
@@ -330,16 +349,18 @@ public class Call implements SwType {
 
     /**
      * Attach a file when logging the call.
-     * @param fileAttachment An {@link EmbeddedFileAttachment} to attach
+     *
+     * @param fileAttachment the complete path to a file you wish to attach. Java must be able to access this path.
      */
-    public void setFileAttachment(EmbeddedFileAttachment fileAttachment) {
-        this.fileAttachment = fileAttachment;
+    public void setFileAttachment(String fileName) {
+        this.fileAttachment = fileName;
     }
 
     /**
      * Use this method if you would like the priority to be auotmatically calculated based on impact and urgency.
-     * @param sla The SLA to use when making calculations
-     * @param impact The impact of the call
+     *
+     * @param sla     The SLA to use when making calculations
+     * @param impact  The impact of the call
      * @param urgency The urgency of the call
      */
     public void setImpactAndUrgency(String sla, String impact, String urgency) {
@@ -359,6 +380,7 @@ public class Call implements SwType {
     /**
      * This method is used by the {@link xmlmc.api.Helpdesk} API when assigning calls to groups. It does not need to be called
      * manually, and may result in an error if not used appropriately.
+     *
      * @param group group to assign the call to.
      * @see xmlmc.api.Helpdesk#logAndAssignNewCall(Call, String)
      * @see Call#assignTo(String, String)
@@ -371,6 +393,7 @@ public class Call implements SwType {
     /**
      * Set the logDate of the call. This is required and set automatically when logging a deferred call, otherwise
      * It defaults to the current date and time.
+     *
      * @param logDate The date and time to log the call in the format YYYY-MM-DDThh:mm:ss see:
      *                <a href = "http://www.w3schools.com/xml/schema_dtypes_date.asp">W3Schools</a> for more details
      */
@@ -380,6 +403,7 @@ public class Call implements SwType {
 
     /**
      * Set the status of the call. Useful mostly when performing updates, defaults to pending
+     *
      * @param status status to set the call to
      * @see Status
      */
@@ -390,7 +414,8 @@ public class Call implements SwType {
     /**
      * Analyst to assign the call to. Is used by the {@link xmlmc.api.Helpdesk} API when logging and assigning calls
      * And could cause errors when called manually.
-     * @param group Group to assign the call to
+     *
+     * @param group   Group to assign the call to
      * @param analyst Analyst to assign the call to
      * @see xmlmc.api.Helpdesk#logAndAssignNewCall(Call, String, String)
      * @see Call#assignTo(String)

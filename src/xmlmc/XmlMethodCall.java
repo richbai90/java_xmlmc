@@ -34,7 +34,7 @@ public class XmlMethodCall {
     /**
      * Creates a connection to the server that can be used to send requests over the wire.
      * @param server The hostname or ip address of the server you wish to send requests to
-     * @throws MalformedURLException
+     * @throws MalformedURLException If the Server Is not a valid hostname or ip address.
      */
     public XmlMethodCall(String server) throws MalformedURLException {
         connection = new Connection(server);

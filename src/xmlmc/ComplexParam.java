@@ -104,7 +104,9 @@ public class ComplexParam {
      * Append the complex param to the document
      */
     public void update() {
-        params.appendChild(param);
+        if (!(params == param)) {
+            params.appendChild(param);
+        }
     }
 
     /**
@@ -115,6 +117,7 @@ public class ComplexParam {
      */
     public ComplexParam createChild(String nodeName) {
         Element child = xml.createElement(nodeName);
+        Node lastChild = param.getLastChild();
         if (param.getLastChild() != null) {
             param.getLastChild().appendChild(child);
         } else {
@@ -152,10 +155,11 @@ public class ComplexParam {
     /**
      * Add an un-nested child to the current root.
      */
-    public void addParameter(String paramName, String value) {
+    public ComplexParam addParameter(String paramName, String value) {
         Element parameter = xml.createElement(paramName);
         parameter.setTextContent(value);
         param.appendChild(parameter);
+        return new ComplexParam(param,xml);
     }
 
     public void addComplexParameter(String parent, ComplexParam parameter) {
@@ -166,7 +170,7 @@ public class ComplexParam {
     }
 
     public void addComplexParameter(ComplexParam parameter) {
-        Node param = xml.importNode(parameter.getRootNode(),true);
+        Node param = xml.importNode(parameter.getRootNode(), true);
         this.param.appendChild(param);
     }
 }
