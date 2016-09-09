@@ -24,7 +24,7 @@ public class EmbeddedFileAttachment implements SwType {
      * @throws ParserConfigurationException
      */
     public EmbeddedFileAttachment(String fileName, String mimeType) throws ParserConfigurationException {
-        param = new ComplexParam("embeddedFileAttachment");
+        param = new ComplexParam("fileAttachment");
         try {
             parseFile(fileName, mimeType);
         } catch (Exception e) {
@@ -42,7 +42,7 @@ public class EmbeddedFileAttachment implements SwType {
      * @throws ParserConfigurationException
      */
     public EmbeddedFileAttachment(String fileName, FileInputStream file, int length, String mimeType) throws IOException, ParserConfigurationException {
-        param = new ComplexParam("embeddedFileAttachment");
+        param = new ComplexParam("fileAttachment");
         parseFile(fileName, mimeType, file, length);
     }
 
@@ -51,7 +51,7 @@ public class EmbeddedFileAttachment implements SwType {
      * @see EmbeddedFileAttachment#EmbeddedFileAttachment(String, String)
      */
     public EmbeddedFileAttachment(String fileName) throws ParserConfigurationException {
-        param = new ComplexParam("embeddedFileAttachment");
+        param = new ComplexParam("fileAttachment");
         try {
             parseFile(fileName);
         } catch (Exception e) {
@@ -66,7 +66,7 @@ public class EmbeddedFileAttachment implements SwType {
      * @throws ParserConfigurationException
      */
     public EmbeddedFileAttachment(String fileName, FileInputStream file, int length) throws IOException, ParserConfigurationException {
-        param = new ComplexParam("embeddedFileAttachment");
+        param = new ComplexParam("fileAttachment");
         parseFile(fileName,file,length);
     }
 

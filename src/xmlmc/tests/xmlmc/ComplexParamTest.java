@@ -5,33 +5,36 @@ import org.junit.Before;
 import org.junit.Test;
 import org.w3c.dom.Node;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.instanceOf;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertTrue;
 
 /**
  * The complex param should return a value something like
  * <param>
- *     <child>
- *         <supchild>
- *             value
- *         </supchild>
- *     </child>
- *     <child>
- *         value
- *     </child>
- *     <child>
- *         <subchild>
- *             <subsubchild>
- *                 value
- *             </subsubchild>
- *         </subchild>
- *     </child>
+ * <child>
+ * <supchild>
+ * value
+ * </supchild>
+ * </child>
+ * <child>
+ * value
+ * </child>
+ * <child>
+ * <subchild>
+ * <subsubchild>
+ * value
+ * </subsubchild>
+ * </subchild>
+ * </child>
  * </param>
  * It should be able to be as complex as we require.
  */
 public class ComplexParamTest {
     ComplexParam complexParam;
     ComplexParam subsubchild;
+
     @Before
     public void setUp() throws Exception {
         this.complexParam = new ComplexParam("param");
@@ -68,7 +71,7 @@ public class ComplexParamTest {
     public void createChild() throws Exception {
         ComplexParam subchild = complexParam.createChild("poop");
         ComplexParam subsubchild = subchild.createChild("subsubchild");
-        assertThat(subsubchild.getRoot().getTagName(),is("param"));
+        assertThat(subsubchild.getRoot().getTagName(), is("param"));
         assertThat(subsubchild.getParam().getLastChild().getLastChild().getNodeName(), is("subsubchild"));
 
     }
@@ -87,7 +90,7 @@ public class ComplexParamTest {
 
     @Test
     public void addParameter() throws Exception {
-        assertThat(complexParam.addParameter("finalchild","value").getParam().getLastChild().getNodeName(), is("finalchild"));
+        assertThat(complexParam.addParameter("finalchild", "value").getParam().getLastChild().getNodeName(), is("finalchild"));
     }
 
     @Test

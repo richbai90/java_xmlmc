@@ -27,7 +27,7 @@ public class Response {
     private String xmlResponse;
     private String lastError;
     private String status;
-    private ArrayList<HashMap<String, String>> rows;
+    private ArrayList<HashMap<String, String>> rows = new ArrayList<>();
     private boolean successful;
     private HashMap<String, String> record;
 
@@ -73,7 +73,7 @@ public class Response {
 
     private void parseRowData() {
         NodeList rowNodes = response.getElementsByTagName("row");
-        if (rowNodes != null) {
+        if (rowNodes.getLength() > 0) {
             ArrayList<Node> rowList = Helpers.nodesAsList(rowNodes);
             for (Node row :
                     rowList) {
@@ -86,18 +86,12 @@ public class Response {
      * Get the value of returned parameter by name
      *
      * @param parameter name of the response param to get
-     * @return value of the parameter as a String
-     * @throws NullPointerException if the parameter by that name was not found.
+     * @return value of the parameter as a String or an empty string if no parameter by that name was found.
      */
-    public String getParameter(String parameter) throws NullPointerException {
+    public String getParameter(String parameter) {
         Node param = response.getElementsByTagName(parameter).item(0);
         if (param == null) {
-//            return "No parameter by that name found. Try getParameters to see all parameters. Please note parameters are case sensitive";
-            throw new NullPointerException(
-                    String.format("No parameter by the name %s found. " +
-                                    "Try using getParameters to see all parameters. Parameters are case sensitive.",
-                            parameter));
-
+            return "";
         }
         return param.getTextContent();
     }
@@ -137,7 +131,6 @@ public class Response {
 
     /**
      * If we are expecting rows from this request return them in an ArrayList
-     * <strong>This is not fully implemented</strong>
      *
      * @return ArrayList of XmlNodes
      */
@@ -147,7 +140,6 @@ public class Response {
 
     /**
      * Return a specific row
-     * <strong>This is not fully implemented</strong>
      *
      * @param index row to get starting at 0 = row 1
      * @return Xml Node

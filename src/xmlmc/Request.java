@@ -52,8 +52,8 @@ public class Request {
             //create the params element
             params = xml.createElement("params");
             //add the service and method attributes to the root element
-            setService(service);
             setMethod(method);
+            setService(service);
         }
 
     }
