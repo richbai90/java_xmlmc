@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/xmlmc.iml" filepath="$PROJECT_DIR$/xmlmc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xmlmc_test/xmlmc_test.iml" filepath="$PROJECT_DIR$/xmlmc_test/xmlmc_test.iml" />
     </modules>
   </component>
 </project>
