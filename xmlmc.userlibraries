@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="commons-codec:commons-codec:1.10">
+    <archive path="/Users/rich/IdeaProjects/xmlmc/lib/commons-codec-1.10.jar" />
+  </library>
+  <library name="java" />
+  <library name="junit-4.12">
+    <archive path="/Applications/IntelliJ IDEA.app/Contents/lib/junit-4.12.jar" />
+    <archive path="/Applications/IntelliJ IDEA.app/Contents/lib/hamcrest-core-1.3.jar" />
+  </library>
+  <library name="actionmailer (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionmailer-4.1.6/lib" />
+  </library>
+  <library name="actionmailer (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="actionmailer (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionmailer-4.2.3/lib" />
+  </library>
+  <library name="actionmailer (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="actionpack (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionpack-4.1.6/lib" />
+  </library>
+  <library name="actionpack (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="actionpack (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionpack-4.2.3/lib" />
+  </library>
+  <library name="actionpack (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="actionview (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionview-4.1.6/lib" />
+  </library>
+  <library name="actionview (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="actionview (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/actionview-4.2.3/lib" />
+  </library>
+  <library name="actionview (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="activejob (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activejob-4.2.3/lib" />
+  </library>
+  <library name="activejob (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="activemodel (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activemodel-4.1.6/lib" />
+  </library>
+  <library name="activemodel (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="activemodel (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activemodel-4.2.3/lib" />
+  </library>
+  <library name="activemodel (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="activerecord (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activerecord-4.1.6/lib" />
+  </library>
+  <library name="activerecord (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="activerecord (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activerecord-4.2.3/lib" />
+  </library>
+  <library name="activerecord (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="activesupport (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activesupport-4.1.6/lib" />
+  </library>
+  <library name="activesupport (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="activesupport (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/activesupport-4.2.3/lib" />
+  </library>
+  <library name="activesupport (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="adauth (v2.0.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/adauth-2.0.5/lib" />
+  </library>
+  <library name="angular-rails-templates (v0.2.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/angular-rails-templates-0.2.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/angular-rails-templates-0.2.0/vendor" />
+  </library>
+  <library name="angular-rails-templates (v0.2.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="arel (v5.0.1.20140414130214, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/arel-5.0.1.20140414130214/lib" />
+  </library>
+  <library name="arel (v5.0.1.20140414130214, RVM: ruby-2.2.1) [gem]" />
+  <library name="arel (v6.0.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/arel-6.0.2/lib" />
+  </library>
+  <library name="arel (v6.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/arel-6.0.3/lib" />
+  </library>
+  <library name="arel (v6.0.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="autoprefixer-rails (v5.2.1.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/autoprefixer-rails-5.2.1.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/autoprefixer-rails-5.2.1.1/vendor" />
+  </library>
+  <library name="autoprefixer-rails (v5.2.1.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="bigdecimal (v1.2.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="bigdecimal (v1.2.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="bigdecimal (v1.2.7, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bigdecimal-1.2.7/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bigdecimal-1.2.7/sample" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bigdecimal-1.2.7/bigdecimal" />
+  </library>
+  <library name="binding_of_caller (v0.7.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/binding_of_caller-0.7.2/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/binding_of_caller-0.7.2/lib" />
+  </library>
+  <library name="builder (v3.2.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/builder-3.2.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/builder-3.2.2/rakelib" />
+  </library>
+  <library name="builder (v3.2.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="bundle (v0.0.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="bundler (v1.10.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.5/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.5/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.5/man" />
+  </library>
+  <library name="bundler (v1.10.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.6/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.6/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/bundler-1.10.6/man" />
+  </library>
+  <library name="bundler (v1.10.6, ruby-2.2.1-p85) [gem]">
+    <archive path="/Users/rich/.gem/ruby/2.2.0/gems/bundler-1.10.6/bin" />
+    <archive path="/Users/rich/.gem/ruby/2.2.0/gems/bundler-1.10.6/lib" />
+    <archive path="/Users/rich/.gem/ruby/2.2.0/gems/bundler-1.10.6/man" />
+  </library>
+  <library name="bundler (v1.10.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="bundler-unload (v1.0.2, ruby-2.2.1-p85) [gem]" />
+  <library name="bundler-unload (v1.0.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="byebug (v5.0.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/byebug-5.0.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/byebug-5.0.0/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/byebug-5.0.0/lib" />
+  </library>
+  <library name="CFPropertyList (v2.2.8, ruby-2.0.0-p645) [gem]">
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/CFPropertyList-2.2.8/lib" />
+  </library>
+  <library name="CFPropertyList (v2.3.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/CFPropertyList-2.3.1/lib" />
+  </library>
+  <library name="chunky_png (v1.3.4, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/chunky_png-1.3.4/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/chunky_png-1.3.4/tasks" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/chunky_png-1.3.4/benchmarks" />
+  </library>
+  <library name="coffee-rails (v4.0.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-rails-4.0.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-rails-4.0.1/gemfiles" />
+  </library>
+  <library name="coffee-rails (v4.0.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="coffee-rails (v4.1.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-rails-4.1.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-rails-4.1.0/gemfiles" />
+  </library>
+  <library name="coffee-script (v2.3.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-script-2.3.0/lib" />
+  </library>
+  <library name="coffee-script (v2.3.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="coffee-script (v2.4.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-script-2.4.1/lib" />
+  </library>
+  <library name="coffee-script-source (v1.8.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-script-source-1.8.0/lib" />
+  </library>
+  <library name="coffee-script-source (v1.8.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="coffee-script-source (v1.9.1.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/coffee-script-source-1.9.1.1/lib" />
+  </library>
+  <library name="columnize (v0.9.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/columnize-0.9.0/lib" />
+  </library>
+  <library name="compass (v1.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-1.0.3/features" />
+  </library>
+  <library name="compass-core (v1.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/data" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/templates" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets" />
+  </library>
+  <library name="compass-import-once (v1.0.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib" />
+  </library>
+  <library name="debug_inspector (v0.0.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/debug_inspector-0.0.2/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/debug_inspector-0.0.2/lib" />
+  </library>
+  <library name="erubis (v2.7.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/erubis-2.7.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/erubis-2.7.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/erubis-2.7.0/contrib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/erubis-2.7.0/doc-api" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/erubis-2.7.0/benchmark" />
+  </library>
+  <library name="erubis (v2.7.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="execjs (v2.2.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/execjs-2.2.2/lib" />
+  </library>
+  <library name="execjs (v2.2.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="execjs (v2.5.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/execjs-2.5.2/lib" />
+  </library>
+  <library name="executable-hooks (v1.3.2, ruby-2.2.1-p85) [gem]" />
+  <library name="executable-hooks (v1.3.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="expects (v0.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/expects-0.0.3/lib" />
+  </library>
+  <library name="ffi (v1.9.10, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/ffi-1.9.10/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/ffi-1.9.10/gen" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/ffi-1.9.10/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/ffi-1.9.10/libtest" />
+  </library>
+  <library name="gem-wrappers (v1.2.7, ruby-2.2.1-p85) [gem]" />
+  <library name="gem-wrappers (v1.2.7, RVM: ruby-2.2.1) [gem]" />
+  <library name="globalid (v0.3.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/globalid-0.3.5/lib" />
+  </library>
+  <library name="globalid (v0.3.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/globalid-0.3.6/lib" />
+  </library>
+  <library name="globalid (v0.3.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="hike (v1.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/hike-1.2.3/lib" />
+  </library>
+  <library name="hike (v1.2.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="hike (v2.1.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/hike-2.1.3/lib" />
+  </library>
+  <library name="i18n (v0.7.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/i18n-0.7.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/i18n-0.7.0/gemfiles" />
+  </library>
+  <library name="i18n (v0.7.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="io-console (v0.4.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="io-console (v0.4.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="jbuilder (v2.2.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jbuilder-2.2.6/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jbuilder-2.2.6/gemfiles" />
+  </library>
+  <library name="jbuilder (v2.2.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="jbuilder (v2.3.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jbuilder-2.3.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jbuilder-2.3.1/gemfiles" />
+  </library>
+  <library name="jquery-rails (v3.1.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jquery-rails-3.1.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jquery-rails-3.1.2/vendor" />
+  </library>
+  <library name="jquery-rails (v3.1.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="jquery-rails (v4.0.4, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jquery-rails-4.0.4/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/jquery-rails-4.0.4/vendor" />
+  </library>
+  <library name="json (v1.7.7, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="json (v1.8.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/data" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/java" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/tests" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/tools" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.1/diagrams" />
+  </library>
+  <library name="json (v1.8.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="json (v1.8.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/data" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/java" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/tests" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/tools" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/json-1.8.3/diagrams" />
+  </library>
+  <library name="libxml-ruby (v2.6.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/libxml-ruby-2.6.0/ext" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/libxml-ruby-2.6.0/lib" />
+  </library>
+  <library name="libxml-ruby (v2.8.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/libxml-ruby-2.8.0/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/libxml-ruby-2.8.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/libxml-ruby-2.8.0/script" />
+  </library>
+  <library name="loofah (v2.0.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/loofah-2.0.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/loofah-2.0.2/benchmark" />
+  </library>
+  <library name="loofah (v2.0.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="mail (v2.6.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mail-2.6.3/lib" />
+  </library>
+  <library name="mail (v2.6.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="mime-types (v2.4.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.4.3/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.4.3/data" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.4.3/support" />
+  </library>
+  <library name="mime-types (v2.4.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="mime-types (v2.6.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.6.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.6.1/data" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mime-types-2.6.1/support" />
+  </library>
+  <library name="mime-types (v2.6.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="mini_portile (v0.6.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mini_portile-0.6.2/lib" />
+  </library>
+  <library name="mini_portile (v0.6.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="minitest (v4.3.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="minitest (v5.5.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/minitest-5.5.0/lib" />
+  </library>
+  <library name="minitest (v5.5.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="minitest (v5.7.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/minitest-5.7.0/lib" />
+  </library>
+  <library name="minitest (v5.8.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/minitest-5.8.0/lib" />
+  </library>
+  <library name="minitest (v5.8.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="multi_json (v1.10.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/multi_json-1.10.1/lib" />
+  </library>
+  <library name="multi_json (v1.10.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="multi_json (v1.11.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/multi_json-1.11.2/lib" />
+  </library>
+  <library name="mysql2 (v0.3.18, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mysql2-0.3.18/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mysql2-0.3.18/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/mysql2-0.3.18/support" />
+  </library>
+  <library name="net-ldap (v0.11, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/net-ldap-0.11/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/net-ldap-0.11/script" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/net-ldap-0.11/testserver" />
+  </library>
+  <library name="nokogiri (v1.5.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/nokogiri-1.5.6/bin" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/nokogiri-1.5.6/ext" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/nokogiri-1.5.6/lib" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/nokogiri-1.5.6/tasks" />
+  </library>
+  <library name="nokogiri (v1.6.6.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Users/rich/Library/Preferences/IntelliJIdea2016.1/rubystubs/ruby20/nokogiri/1.6.6.2" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/nokogiri-1.6.6.2/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/nokogiri-1.6.6.2/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/nokogiri-1.6.6.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/nokogiri-1.6.6.2/tasks" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/nokogiri-1.6.6.2/suppressions" />
+  </library>
+  <library name="nokogiri (v1.6.6.2, RVM: ruby-2.2.1) [gem]">
+    <archive path="/Users/rich/Library/Preferences/IntelliJIdea2016.1/rubystubs/ruby18/nokogiri/1.6.6.2" />
+  </library>
+  <library name="psych (v2.0.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="psych (v2.0.8, RVM: ruby-2.2.1) [gem]" />
+  <library name="rack (v1.5.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/contrib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.5.2/example" />
+  </library>
+  <library name="rack (v1.5.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="rack (v1.6.4, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.6.4/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.6.4/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.6.4/contrib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-1.6.4/example" />
+  </library>
+  <library name="rack (v1.6.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="rack-test (v0.6.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-test-0.6.2/lib" />
+  </library>
+  <library name="rack-test (v0.6.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="rack-test (v0.6.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rack-test-0.6.3/lib" />
+  </library>
+  <library name="rack-test (v0.6.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="rails (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rails-4.1.6/guides" />
+  </library>
+  <library name="rails (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="rails (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rails-4.2.3/guides" />
+  </library>
+  <library name="rails (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="rails-deprecated_sanitizer (v1.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rails-deprecated_sanitizer-1.0.3/lib" />
+  </library>
+  <library name="rails-deprecated_sanitizer (v1.0.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="rails-dom-testing (v1.0.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rails-dom-testing-1.0.6/lib" />
+  </library>
+  <library name="rails-dom-testing (v1.0.7, RVM: ruby-2.2.1) [gem]" />
+  <library name="rails-html-sanitizer (v1.0.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rails-html-sanitizer-1.0.2/lib" />
+  </library>
+  <library name="rails-html-sanitizer (v1.0.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="railties (v4.1.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/railties-4.1.6/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/railties-4.1.6/lib" />
+  </library>
+  <library name="railties (v4.1.6, RVM: ruby-2.2.1) [gem]" />
+  <library name="railties (v4.2.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/railties-4.2.3/lib" />
+  </library>
+  <library name="railties (v4.2.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="rake (v0.9.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="rake (v10.4.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rake-10.4.2/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rake-10.4.2/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rake-10.4.2/rakelib" />
+  </library>
+  <library name="rake (v10.4.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="rb-fsevent (v0.9.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rb-fsevent-0.9.5/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rb-fsevent-0.9.5/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rb-fsevent-0.9.5/lib" />
+  </library>
+  <library name="rb-inotify (v0.9.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rb-inotify-0.9.5/lib" />
+  </library>
+  <library name="rdoc (v4.0.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="rdoc (v4.2.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rdoc-4.2.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rdoc-4.2.0/lib" />
+  </library>
+  <library name="rdoc (v4.2.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="rubygems-bundler (v1.4.4, ruby-2.2.1-p85) [gem]" />
+  <library name="rubygems-bundler (v1.4.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="rubygems-update (v2.4.8, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rubygems-update-2.4.8/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rubygems-update-2.4.8/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rubygems-update-2.4.8/util" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/rubygems-update-2.4.8/hide_lib_for_update" />
+  </library>
+  <library name="rvm (v1.11.3.9, ruby-2.2.1-p85) [gem]" />
+  <library name="rvm (v1.11.3.9, RVM: ruby-2.2.1) [gem]" />
+  <library name="sass (v3.4.13, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/extra" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/rails" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor" />
+  </library>
+  <library name="sass (v3.4.16, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/extra" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/rails" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.16/vendor" />
+  </library>
+  <library name="sass (v3.4.9, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/extra" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/rails" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-3.4.9/vendor" />
+  </library>
+  <library name="sass (v3.4.9, RVM: ruby-2.2.1) [gem]" />
+  <library name="sass-rails (v5.0.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sass-rails-5.0.3/lib" />
+  </library>
+  <library name="sdoc (v0.4.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sdoc-0.4.1/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sdoc-0.4.1/lib" />
+  </library>
+  <library name="sdoc (v0.4.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="spring (v1.2.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/spring-1.2.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/spring-1.2.0/lib" />
+  </library>
+  <library name="spring (v1.2.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="spring (v1.3.6, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/spring-1.3.6/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/spring-1.3.6/lib" />
+  </library>
+  <library name="sprockets (v2.12.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-2.12.3/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-2.12.3/lib" />
+  </library>
+  <library name="sprockets (v2.12.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="sprockets (v3.2.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-3.2.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-3.2.0/lib" />
+  </library>
+  <library name="sprockets (v3.4.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="sprockets-rails (v2.2.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-rails-2.2.2/lib" />
+  </library>
+  <library name="sprockets-rails (v2.2.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="sprockets-rails (v2.3.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sprockets-rails-2.3.2/lib" />
+  </library>
+  <library name="sprockets-rails (v2.3.3, RVM: ruby-2.2.1) [gem]" />
+  <library name="sqlite3 (v1.3.10, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sqlite3-1.3.10/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sqlite3-1.3.10/faq" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sqlite3-1.3.10/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/sqlite3-1.3.10/tasks" />
+  </library>
+  <library name="sqlite3 (v1.3.10, RVM: ruby-2.2.1) [gem]" />
+  <library name="sqlite3 (v1.3.7, ruby-2.0.0-p645) [gem]">
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/sqlite3-1.3.7/ext" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/sqlite3-1.3.7/faq" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/sqlite3-1.3.7/lib" />
+    <archive path="/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0/gems/sqlite3-1.3.7/tasks" />
+  </library>
+  <library name="test-unit (v2.0.0.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/usr/lib/ruby/2.0.0/dl" />
+    <archive path="/usr/lib/ruby/2.0.0/io" />
+    <archive path="/usr/lib/ruby/2.0.0/cgi" />
+    <archive path="/usr/lib/ruby/2.0.0/drb" />
+    <archive path="/usr/lib/ruby/2.0.0/irb" />
+    <archive path="/usr/lib/ruby/2.0.0/net" />
+    <archive path="/usr/lib/ruby/2.0.0/rss" />
+    <archive path="/usr/lib/ruby/2.0.0/uri" />
+    <archive path="/usr/lib/ruby/2.0.0/date" />
+    <archive path="/usr/lib/ruby/2.0.0/json" />
+    <archive path="/usr/lib/ruby/2.0.0/racc" />
+    <archive path="/usr/lib/ruby/2.0.0/rake" />
+    <archive path="/usr/lib/ruby/2.0.0/rdoc" />
+    <archive path="/usr/lib/ruby/2.0.0/yaml" />
+    <archive path="/usr/lib/ruby/2.0.0/psych" />
+    <archive path="/usr/lib/ruby/2.0.0/rexml" />
+    <archive path="/usr/lib/ruby/2.0.0/rinda" />
+    <archive path="/usr/lib/ruby/2.0.0/shell" />
+    <archive path="/usr/lib/ruby/2.0.0/digest" />
+    <archive path="/usr/lib/ruby/2.0.0/fiddle" />
+    <archive path="/usr/lib/ruby/2.0.0/matrix" />
+    <archive path="/usr/lib/ruby/2.0.0/ripper" />
+    <archive path="/usr/lib/ruby/2.0.0/syslog" />
+    <archive path="/usr/lib/ruby/2.0.0/xmlrpc" />
+    <archive path="/usr/lib/ruby/2.0.0/openssl" />
+    <archive path="/usr/lib/ruby/2.0.0/webrick" />
+    <archive path="/usr/lib/ruby/2.0.0/minitest" />
+    <archive path="/usr/lib/ruby/2.0.0/optparse" />
+    <archive path="/usr/lib/ruby/2.0.0/rbconfig" />
+    <archive path="/usr/lib/ruby/2.0.0/rubygems" />
+    <archive path="/usr/lib/ruby/2.0.0/bigdecimal" />
+    <archive path="/usr/lib/ruby/2.0.0/universal-darwin15" />
+  </library>
+  <library name="thor (v0.19.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thor-0.19.1/lib" />
+  </library>
+  <library name="thor (v0.19.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="thread_safe (v0.3.4, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.4/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.4/lib" />
+  </library>
+  <library name="thread_safe (v0.3.4, RVM: ruby-2.2.1) [gem]" />
+  <library name="thread_safe (v0.3.5, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.5/ext" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.5/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.5/tasks" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/thread_safe-0.3.5/yard-template" />
+  </library>
+  <library name="thread_safe (v0.3.5, RVM: ruby-2.2.1) [gem]" />
+  <library name="tilt (v1.4.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/tilt-1.4.1/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/tilt-1.4.1/lib" />
+  </library>
+  <library name="tilt (v1.4.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="turbolinks (v2.5.3, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/turbolinks-2.5.3/lib" />
+  </library>
+  <library name="tzinfo (v1.2.2, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/tzinfo-1.2.2/lib" />
+  </library>
+  <library name="tzinfo (v1.2.2, RVM: ruby-2.2.1) [gem]" />
+  <library name="uglifier (v2.6.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/uglifier-2.6.0/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/uglifier-2.6.0/gemfiles" />
+  </library>
+  <library name="uglifier (v2.6.0, RVM: ruby-2.2.1) [gem]" />
+  <library name="uglifier (v2.7.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/uglifier-2.7.1/lib" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/uglifier-2.7.1/gemfiles" />
+  </library>
+  <library name="web-console (v2.2.1, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/web-console-2.2.1/lib" />
+  </library>
+  <library name="xmlmc-rb (v1.0.0, ruby-2.0.0-p645) [gem]">
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/xmlmc-rb-1.0.0/bin" />
+    <archive path="/Library/Ruby/Gems/2.0.0/gems/xmlmc-rb-1.0.0/lib" />
+  </library>
+  <library name="xmlmc-rb (v1.0.1, RVM: ruby-2.2.1) [gem]" />
+  <library name="xmlmc-rb (v2.0.0, RVM: ruby-2.2.1) [gem]" />
+</eclipse-userlibraries>
+
