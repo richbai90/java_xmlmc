@@ -156,7 +156,7 @@ public class Call implements SwType {
         }
 
         if (organisation != null) {
-            addAdditionalCallValue("opencall", "companyname", organisation);
+            addAdditionalCallValue("opencall", "fk_company_id", organisation);
         }
 
         if (status != null) {
@@ -255,8 +255,8 @@ public class Call implements SwType {
             organisation = customerRecord.getRow(0).get("fk_company_id");
             customerName = firstName + " " + lastName;
 
-            Response orgRecord = data.sqlQuery(String.format("select companyname from company where pk_company_id = '%s'", organisation));
-            organisation = orgRecord.getRow(0).get("companyname");
+//            Response orgRecord = data.sqlQuery(String.format("select companyname from company where pk_company_id = '%s'", organisation));
+//            organisation = orgRecord.getRow(0).get("companyname");
         } catch (IOException e) {
             e.printStackTrace();
         }
