@@ -30,6 +30,7 @@ public class EndToEnd {
                 //Sla Name, Impact, Urgency
                 call.setImpactAndUrgency("Service Delivery - Silver Service (10 Days)", "High", "High");
 
+                //System.out.println(call.buildXml());
                 Response response = methodCall.helpdesk().logAndAcceptNewCall(call);
 
                 //Print the xml response
@@ -42,6 +43,7 @@ public class EndToEnd {
                 methodCall.session().analystLogoff();
             } else {
                 System.out.println(sessionEstablished.getLastError());
+                methodCall.session().analystLogoff();
             }
 
         } catch (IOException | ParserConfigurationException e) {

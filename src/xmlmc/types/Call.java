@@ -209,7 +209,7 @@ public class Call implements SwType {
                 ) {
             ComplexParam table = callValues.createChild(tables.getKey());
             for (Map.Entry<String, String> columns : tables.getValue().entrySet()) {
-                table.addParameter(columns.getKey(), columns.getValue());
+                table.createChild(columns.getKey(), columns.getValue());
             }
         }
 
@@ -375,6 +375,10 @@ public class Call implements SwType {
 
         this.impact = impact;
         this.urgency = urgency;
+
+        addAdditionalCallValue("opencall","itsm_sladef", this.sla);
+        addAdditionalCallValue("opencall", "itsm_impact_level", impact);
+        addAdditionalCallValue("opencall", "itsm_urgency_level", urgency);
     }
 
     /**

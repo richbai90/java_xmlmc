@@ -138,28 +138,6 @@ public class Request {
 
     }
 
-    private String getXmlString() {
-        //parse the document to a string and return the string
-        DOMSource domSource = new DOMSource(xml);
-        StringWriter writer = new StringWriter();
-        StreamResult result = new StreamResult(writer);
-        TransformerFactory tf = TransformerFactory.newInstance();
-        Transformer transformer = null;
-        try {
-            transformer = tf.newTransformer();
-        } catch (TransformerConfigurationException e) {
-            e.printStackTrace();
-        }
-        try {
-            if (transformer != null) {
-                transformer.transform(domSource, result);
-            }
-        } catch (TransformerException e) {
-            e.printStackTrace();
-        }
-        return writer.toString();
-    }
-
     /**
      * Return a string representation of the xml
      *
@@ -173,7 +151,7 @@ public class Request {
      * </methodCall>}</pre>
      */
     public String toString() {
-        return getXmlString();
+        return Helpers.getXmlString(xml);
     }
 
     /**

@@ -127,6 +127,26 @@ public class ComplexParam {
         return new ComplexParam(param, xml);
     }
 
+    /**
+     * Create a child element to the complex param with a text value
+     *
+     * @param nodeName Name of the child
+     * @param nodeValue Text Content of the node
+     * @return New xmlmc.ComplexParam
+     */
+    public ComplexParam createChild(String nodeName, String nodeValue) {
+        Element child = xml.createElement(nodeName);
+        child.setTextContent(nodeValue);
+        Node lastChild = param.getLastChild();
+        if (param.getLastChild() != null) {
+            param.getLastChild().appendChild(child);
+        } else {
+            param.appendChild(child);
+        }
+
+        return new ComplexParam(param, xml);
+    }
+
 
     /**
      * Set an attribute on the parameter
@@ -173,4 +193,11 @@ public class ComplexParam {
         Node param = xml.importNode(parameter.getRootNode(), true);
         this.param.appendChild(param);
     }
+
+    @Override
+    public String toString() {
+        return Helpers.getXmlString(xml);
+    }
+
+
 }
