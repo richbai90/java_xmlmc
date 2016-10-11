@@ -1,7 +1,0 @@
-{
-  "address" : {
-    "pk" : "pk_address_id",
-    "relates_to" : [{"table" : "company", "on" : {"pk" : "fk_address_id"} }]
-  },
-
-}
