@@ -186,7 +186,7 @@ public class Call implements SwType {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else if (customer != null) {
+        } else if (customer != null ) {
             try {
                 Response priority_record = data.sqlQuery(Data.Database.SWDATA, "Select priority from userdb where" +
                         String.format(" keysearch = '%s'", customer), false);
@@ -368,7 +368,7 @@ public class Call implements SwType {
         try {
             Response sladid_record = data.sqlQuery(Data.Database.SWDATA, String.format("select pk_slad_id from " +
                     "itsmsp_slad where slad_id = '%s'", sla), false);
-            this.sla = sladid_record.getRow(0).get("slad_id");
+            this.sla = sladid_record.getRow(0).get("pk_slad_id");
         } catch (IOException e) {
             e.printStackTrace();
         }
