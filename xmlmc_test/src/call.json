@@ -1,0 +1,21 @@
+{
+  "callClass": "incident",
+  "summary": null,
+  "customer": "alanc",
+  "priority": "03Routine_P",
+  "description": "this is a test call. Logged from the java api",
+  "probCode": null,
+  "site": "R 3",
+  "condition": null,
+  "timeSpent": 5,
+  "updateCode": "API",
+  "updateSource": "XMLMC API",
+  "impact": "High",
+  "urgency": "High",
+  "sla": "Service Delivery - Silver Service (10 Days)",
+  "organisation": "MIID",
+  "groupId": null,
+  "analystId": null,
+  "logDate": null,
+  "status": null
+}

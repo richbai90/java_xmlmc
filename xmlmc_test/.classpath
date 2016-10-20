@@ -3,5 +3,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="/xmlmc/out/artifacts/xmlmc_jar/xmlmc.jar" sourcepath="/xmlmc/out/artifacts/xmlmc_jar/xmlmc.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/com.fasterxml.jackson.core:jackson-core:2.0.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/com.fasterxml.jackson.core:jackson-annotations:2.0.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/com.fasterxml.jackson.core:jackson-databind:2.0.4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
