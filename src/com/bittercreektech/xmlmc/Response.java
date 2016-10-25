@@ -30,7 +30,7 @@ public class Response {
     private String status;
     private ArrayList<Map<String, String>> rows = new ArrayList<>();
     private boolean successful;
-    private HashMap<String, String> record;
+    private Map<String, String> record;
 
     /**
      * Will attempt to parse an xml response. If the response is not valid xml no error is thrown but the successful flag
@@ -102,7 +102,7 @@ public class Response {
      *
      * @return HashMap {@code {paramName => paramValue} }
      */
-    public HashMap<String, String> getParameters() {
+    public Map<String, String> getParameters() {
         Node parameters = response.getElementsByTagName("params").item(0);
         NodeList allParams = parameters.getChildNodes();
         return Helpers.nodesAsMap(allParams);
@@ -149,7 +149,7 @@ public class Response {
         return rows.get(index);
     }
 
-    public HashMap<String, String> getRecord() {
+    public Map<String, String> getRecord() {
         return record;
     }
 

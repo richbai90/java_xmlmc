@@ -1,7 +1,6 @@
 package com.bittercreektech.xmlmc.api;
 
 import java.util.Collection;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
@@ -12,9 +11,9 @@ import java.util.Set;
  ******************************************/
 public class ActiveRecord implements Map<Object, String> {
 
-    private HashMap<Object, String> record;
+    private Map<Object, String> record;
 
-    ActiveRecord(HashMap<Object, String> record) {
+    ActiveRecord(Map<Object, String> record) {
         this.record = record;
     }
 

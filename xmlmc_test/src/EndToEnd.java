@@ -27,6 +27,7 @@ public class EndToEnd {
             //Create a new schema from the json object
             CallSchema callSchema = mapper.readValue(new File(jsonFilePath), CallSchema.class);
 
+
             XmlMethodCall methodCall = new XmlMethodCall("192.168.1.138");
             //Perform a logon attempt
             Response sessionEstablished = methodCall.session().analystLogon("admin", "");
@@ -36,7 +37,8 @@ public class EndToEnd {
                 //Create a new call object
 
                 Call call = new Call(methodCall, "incident");
-                call.setDescription(callSchema.getDescription());
+                call.setDescription(callSchema.getDescription() + "\n " + mapper.writerWithDefaultPrettyPrinter()
+                        .writeValueAsString(callSchema));
                 call.setCustomer(callSchema.getCustomer());
 
 
