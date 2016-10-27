@@ -242,6 +242,7 @@ public class Call implements SwType {
 
     /**
      * Set the customer
+     *
      * @param customer
      * @throws XmlmcException
      */
@@ -377,8 +378,8 @@ public class Call implements SwType {
                     "itsmsp_slad where slad_id = '%s'", sla), false);
             try {
                 this.sla = sladid_record.getRow(0).get("pk_slad_id");
-            } catch(Throwable throwable) {
-                throw new XmlmcException(String.format("%s (%s)", ErrorCodes.RECORD_NOT_FOUND,"pk_slad_id"),throwable,xmlmc);
+            } catch (Throwable throwable) {
+                throw new XmlmcException(String.format("%s (%s)", ErrorCodes.RECORD_NOT_FOUND, "pk_slad_id"), throwable, xmlmc);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -438,5 +439,24 @@ public class Call implements SwType {
     public void assignTo(String group, String analyst) {
         groupId = group;
         analystId = analyst;
+    }
+
+    /**
+     * Associate a service to the request using the service name
+     * @param serviceName The name of the service. Should correspond to the value for ck_config_itemi in the config_itemi table
+     * @throws XmlmcException when the result of the query is empty and therefore the service cannot be associated.
+     */
+    public void associateService(String serviceName) {
+        try {
+            Response result = xmlmc.data().sqlQuery(String.format("Select pk_auto_id from config_itemi where ck_config_item = '%s'", serviceName));
+            try {
+                String pkAutoId = result.getRow(0).get("pk_auto_id");
+                addAdditionalCallValue("opencall", "itsm_fk_service", pkAutoId);
+            } catch (NullPointerException e) {
+                throw new XmlmcException("Unable to find results for " + serviceName, xmlmc);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

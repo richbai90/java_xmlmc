@@ -1,5 +1,3 @@
-package com.bittercreektech.xmlmc.tests;
-
 import com.bittercreektech.xmlmc.ComplexParam;
 import org.junit.After;
 import org.junit.Before;
