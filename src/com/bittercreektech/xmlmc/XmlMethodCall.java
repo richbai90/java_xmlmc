@@ -32,12 +32,22 @@ public class XmlMethodCall {
     private Connection connection;
 
     /**
-     * Creates a connection to the server that can be used to send requests over the wire.
+     * Creates a connection to the server that can be used to send requests over the wire
+     * @param server The hostname or ip address of the server you wish to send requests to
+     * @param debug Whether to print the request xml and response xml to the console
+     * @throws MalformedURLException If the Server is not a valid hostname or ip address
+     */
+    public XmlMethodCall(String server, boolean debug) throws MalformedURLException {
+        connection = new Connection(server, debug);
+    }
+
+    /**
+     * Creates a connection to the server that can be used to send requests over the wire. Sets debug to false.
      * @param server The hostname or ip address of the server you wish to send requests to
      * @throws MalformedURLException If the Server Is not a valid hostname or ip address.
      */
     public XmlMethodCall(String server) throws MalformedURLException {
-        connection = new Connection(server);
+        this(server, false);
     }
 
     /**

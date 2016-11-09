@@ -22,45 +22,54 @@ public class EndToEnd {
 
         try {
 
-            String jsonFilePath = System.getProperty("user.dir") + "/xmlmc_test/src/call.json";
-
-            //Create a new schema from the json object
-            CallSchema callSchema = mapper.readValue(new File(jsonFilePath), CallSchema.class);
-
-
-            XmlMethodCall methodCall = new XmlMethodCall("192.168.1.138");
-            //Perform a logon attempt
-            Response sessionEstablished = methodCall.session().analystLogon("admin", "");
-
-            if (sessionEstablished.isSuccessful()) {
-
-                //Create a new call object
-
-                Call call = new Call(methodCall, "incident");
-                call.setDescription(callSchema.getDescription() + "\n " + mapper.writerWithDefaultPrettyPrinter()
-                        .writeValueAsString(callSchema));
-                call.setCustomer(callSchema.getCustomer());
-
-
-                //Sla Name, Impact, Urgency
-                call.setImpactAndUrgency(callSchema.getSla(), callSchema.getImpact(), callSchema.getUrgency());
-
-                Response response = methodCall.helpdesk().logAndAcceptNewCall(call);
-
-                //Print the xml response
-                System.out.println(response);
-
-                //Print the callref value
-                System.out.println(response.getParameter("callref"));
-
-                //logoff
-                methodCall.session().analystLogoff();
-            } else {
-                System.out.println(sessionEstablished.getLastError());
+            XmlMethodCall methodCall = new XmlMethodCall("192.168.1.138", true);
+            Response sessionEstablished = methodCall.session().analystLogon("admin","");
+            if(sessionEstablished.isSuccessful()) {
+                Response statusInfo = methodCall.helpdesk().getCallStatusInfo("634");
                 methodCall.session().analystLogoff();
             }
 
-        } catch (IOException | ParserConfigurationException e) {
+//            String jsonFilePath = System.getProperty("user.dir") + "/xmlmc_test/src/call.json";
+//
+//            //Create a new schema from the json object
+//            CallSchema callSchema = mapper.readValue(new File(jsonFilePath), CallSchema.class);
+//
+//
+//            XmlMethodCall methodCall = new XmlMethodCall("192.168.1.138");
+//            //Perform a logon attempt
+//            Response sessionEstablished = methodCall.session().analystLogon("admin", "");
+//
+//            if (sessionEstablished.isSuccessful()) {
+//
+//                //Create a new call object
+//
+//                Call call = new Call(methodCall, "Service Request");
+//                call.setDescription(callSchema.getDescription() + "\n " + mapper.writerWithDefaultPrettyPrinter()
+//                        .writeValueAsString(callSchema));
+//                call.setCustomer(callSchema.getCustomer());
+//
+//
+//                //Sla Name, Impact, Urgency
+//                call.setImpactAndUrgency(callSchema.getSla(), callSchema.getImpact(), callSchema.getUrgency());
+//
+//                call.associateService("BYOD");
+//
+//                Response response = methodCall.helpdesk().logAndAcceptNewCall(call);
+//
+//                //Print the xml response
+//                System.out.println(response);
+//
+//                //Print the callref value
+//                System.out.println(response.getParameter("callref"));
+//
+//                //logoff
+//                methodCall.session().analystLogoff();
+//            } else {
+//                System.out.println(sessionEstablished.getLastError());
+//                methodCall.session().analystLogoff();
+//            }
+
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }

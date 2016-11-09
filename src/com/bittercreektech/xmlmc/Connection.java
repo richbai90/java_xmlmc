@@ -23,10 +23,11 @@ public class Connection {
     private String sessionId;
     private String server;
     private String session = "";
+    private boolean debug = false;
 
-    private Connection(String server, String port) throws MalformedURLException {
+    private Connection(String server, String port, boolean debug) throws MalformedURLException {
         this.server = server;
-        connect(server, port);
+        connect(server, port, debug);
     }
 
     /**
@@ -34,12 +35,14 @@ public class Connection {
      *
      * @param server hostname or ip address of the server
      */
-    public Connection(String server) throws MalformedURLException {
+    public Connection(String server, boolean debug) throws MalformedURLException {
         this.server = server;
-        connect();
+
+        connect(debug);
     }
 
-    private void connect(String server, String port) throws MalformedURLException {
+    private void connect(String server, String port, boolean debug) throws MalformedURLException {
+        this.debug = debug;
         try {
             endpoint = new URL(String.format("http://%s:%s", server, port));
         } catch (MalformedURLException e) {
@@ -47,8 +50,8 @@ public class Connection {
         }
     }
 
-    private void connect() throws MalformedURLException {
-        connect(server, "5015");
+    private void connect(boolean debug) throws MalformedURLException {
+        connect(server, "5015", debug);
     }
 
     private void setSession(String session) {
@@ -72,6 +75,9 @@ public class Connection {
     }
 
     private Response sendRequest(String xmlRequest) throws IOException {
+        if(debug) {
+            System.out.println(xmlRequest);
+        }
         connection = (HttpURLConnection) endpoint.openConnection();
         connection.setDoOutput(true); // Triggers POST.
         connection.setFixedLengthStreamingMode(xmlRequest.length()); //avoid chunking data
@@ -97,6 +103,9 @@ public class Connection {
 
         Response response = handleResponse();
         lastError = (response.getStatus().equalsIgnoreCase("ok")) ? "" : response.getLastError();
+        if(debug) {
+            System.out.println(response);
+        }
         return response;
 
     }

@@ -1,5 +1,3 @@
-package com.bittercreektech.xmlmc.tests;
-
 import com.bittercreektech.xmlmc.Connection;
 import com.bittercreektech.xmlmc.Request;
 import com.bittercreektech.xmlmc.Response;
@@ -23,7 +21,7 @@ public class ConnectionTest {
 
     @Before
     public void setUp() throws Exception {
-        connection = new Connection("192.168.1.102");
+        connection = new Connection("192.168.1.102", true);
     }
 
     @After

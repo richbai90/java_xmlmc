@@ -1,5 +1,5 @@
 {
-  "callClass": "incident",
+  "callClass": "Service Request",
   "summary": null,
   "customer": "alanc",
   "priority": "03Routine_P",

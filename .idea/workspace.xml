@@ -11,12 +11,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b641ea1-09be-4ac1-a227-7c5c3cab3435" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/tests/ComplexParamTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/tests/ConnectionTest.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/xmlmc/com/bittercreektech/xmlmc/tests/ConnectionTest.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar" afterPath="$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/types/Call.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/types/Call.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/Connection.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/Connection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/XmlMethodCall.class" afterPath="$PROJECT_DIR$/out/production/xmlmc/com/bittercreektech/xmlmc/XmlMethodCall.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc_test/EndToEnd.class" afterPath="$PROJECT_DIR$/out/production/xmlmc_test/EndToEnd.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ComplexParamTest.java" afterPath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ComplexParamTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java" afterPath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/xmlmc_test/call.json" afterPath="$PROJECT_DIR$/out/production/xmlmc_test/call.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java" afterPath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java" afterPath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java" afterPath="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java" afterPath="$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/xmlmc_test/src/call.json" afterPath="$PROJECT_DIR$/xmlmc_test/src/call.json" />
     </list>
     <ignored path="java_xmlmc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,78 +46,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-              <folding>
-                <element signature="e#4843#4844#0" expanded="true" />
-                <element signature="e#4872#4873#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActiveRecord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/ActiveRecord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-              <folding>
-                <element signature="e#411#412#0" expanded="false" />
-                <element signature="e#447#448#0" expanded="false" />
-                <element signature="e#585#586#0" expanded="false" />
-                <element signature="e#612#613#0" expanded="false" />
-                <element signature="e#913#914#0" expanded="false" />
-                <element signature="e#949#950#0" expanded="false" />
-                <element signature="e#1163#1164#0" expanded="false" />
-                <element signature="e#1202#1203#0" expanded="false" />
-                <element signature="e#2256#2257#0" expanded="false" />
-                <element signature="e#2302#2303#0" expanded="false" />
-                <element signature="e#3481#3482#0" expanded="false" />
-                <element signature="e#3531#3532#0" expanded="false" />
-                <element signature="e#5103#5104#0" expanded="false" />
-                <element signature="e#5141#5142#0" expanded="false" />
-                <element signature="e#6760#6761#0" expanded="false" />
-                <element signature="e#6805#6806#0" expanded="false" />
-                <element signature="e#8668#8669#0" expanded="false" />
-                <element signature="e#8708#8709#0" expanded="false" />
-                <element signature="e#10074#10075#0" expanded="false" />
-                <element signature="e#10106#10107#0" expanded="false" />
-                <element signature="e#10446#10447#0" expanded="false" />
-                <element signature="e#10476#10477#0" expanded="false" />
-                <element signature="e#11303#11304#0" expanded="false" />
-                <element signature="e#11341#11342#0" expanded="false" />
-                <element signature="e#12227#12228#0" expanded="false" />
-                <element signature="e#12265#12266#0" expanded="false" />
-                <element signature="e#13206#13207#0" expanded="false" />
-                <element signature="e#13246#13247#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComplexParamTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ComplexParamTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EndToEnd.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EndToEnd.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="225">
+              <caret line="27" column="85" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="85" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlMethodCall.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/XmlMethodCall.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XmlMethodCall.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
               <folding>
-                <element signature="n#!!doc" expanded="false" />
+                <element signature="e#2826#2827#0" expanded="true" />
+                <element signature="e#2874#2875#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConnectionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Service.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -118,17 +112,17 @@
       <file leaf-file-name="Helpdesk.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Helpdesk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6270">
+            <state relative-caret-position="441">
               <caret line="428" column="9" selection-start-line="428" selection-start-column="9" selection-end-line="428" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Call.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Call.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
+            <state relative-caret-position="615">
               <caret line="460" column="5" selection-start-line="460" selection-start-column="5" selection-end-line="460" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -140,8 +134,8 @@
       <file leaf-file-name="call.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmlmc_test/src/call.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="15">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -150,21 +144,11 @@
       <file leaf-file-name="CallSchema.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/xmlmc_test/src/CallSchema.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="81" column="73" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
               <folding>
-                <element signature="e#2247#2263#0" expanded="false" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Request.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -191,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Session.java" />
         <option value="$PROJECT_DIR$/src/Connection.java" />
         <option value="$PROJECT_DIR$/src/foundation/Response.java" />
         <option value="$PROJECT_DIR$/src/foundation/ComplexParam.java" />
@@ -226,9 +209,7 @@
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/exceptions/RecordNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/ErrorCodes/RecordNotFoundException.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/XmlMethodCallTest.java" />
-        <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Exceptions/RecrodNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlmcException.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/RecordsetTest.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Helpers.java" />
@@ -236,12 +217,15 @@
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Recordset.java" />
         <option value="$PROJECT_DIR$/xmlmc_test/src/CallData.java" />
         <option value="$PROJECT_DIR$/xmlmc_test/src/CallSchema.java" />
-        <option value="$PROJECT_DIR$/xmlmc_test/src/call.json" />
-        <option value="$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Response.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/ActiveRecord.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ComplexParamTest.java" />
         <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java" />
+        <option value="$PROJECT_DIR$/xmlmc_test/src/call.json" />
+        <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java" />
+        <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java" />
+        <option value="$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java" />
+        <option value="$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java" />
       </list>
     </option>
   </component>
@@ -290,8 +274,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -320,11 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
+              <option name="myItemId" value="xmlmc_test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,21 +319,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="xmlmc_test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="xmlmc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -975,7 +951,8 @@
       <workItem from="1476977521330" duration="3126000" />
       <workItem from="1477346648860" duration="319000" />
       <workItem from="1477418055313" duration="985000" />
-      <workItem from="1477583006665" duration="1201000" />
+      <workItem from="1477583006665" duration="1571000" />
+      <workItem from="1478713426561" duration="2325000" />
     </task>
     <servers />
   </component>
@@ -1012,7 +989,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181420000" />
+    <option name="totallyTimeSpent" value="184115000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,13 +1012,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32923076" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23230769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18923077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23230769" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14769231" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.226979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2003231" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1053,6 +1029,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="100" y="100" width="1080" height="520" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1091,48 +1068,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/BaseMatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/core/IsEqual.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/core/Is.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/CoreMatchers.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/hamcrest-core-1.3.jar!/org/hamcrest/MatcherAssert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="355" column="0" selection-start-line="355" selection-start-column="0" selection-end-line="355" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/src.zip!/org/xml/sax/InputSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3795">
@@ -1223,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="46" column="33" selection-start-line="46" selection-start-column="33" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/HelpersTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1259,13 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="61" column="11" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlmcException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1284,13 +1205,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2700">
           <caret line="187" column="19" selection-start-line="187" selection-start-column="19" selection-end-line="187" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -1336,46 +1250,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="49" column="1" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/call.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/CallSchema.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#2247#2263#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Request.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
           <caret line="99" column="7" selection-start-line="99" selection-start-column="7" selection-end-line="99" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Helpdesk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6270">
-          <caret line="428" column="9" selection-start-line="428" selection-start-column="9" selection-end-line="428" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -1395,36 +1273,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#411#412#0" expanded="false" />
-            <element signature="e#447#448#0" expanded="false" />
-            <element signature="e#585#586#0" expanded="false" />
-            <element signature="e#612#613#0" expanded="false" />
-            <element signature="e#913#914#0" expanded="false" />
-            <element signature="e#949#950#0" expanded="false" />
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1202#1203#0" expanded="false" />
-            <element signature="e#2256#2257#0" expanded="false" />
-            <element signature="e#2302#2303#0" expanded="false" />
-            <element signature="e#3481#3482#0" expanded="false" />
-            <element signature="e#3531#3532#0" expanded="false" />
-            <element signature="e#5103#5104#0" expanded="false" />
-            <element signature="e#5141#5142#0" expanded="false" />
-            <element signature="e#6760#6761#0" expanded="false" />
-            <element signature="e#6805#6806#0" expanded="false" />
-            <element signature="e#8668#8669#0" expanded="false" />
-            <element signature="e#8708#8709#0" expanded="false" />
-            <element signature="e#10074#10075#0" expanded="false" />
-            <element signature="e#10106#10107#0" expanded="false" />
-            <element signature="e#10446#10447#0" expanded="false" />
-            <element signature="e#10476#10477#0" expanded="false" />
-            <element signature="e#11303#11304#0" expanded="false" />
-            <element signature="e#11341#11342#0" expanded="false" />
-            <element signature="e#12227#12228#0" expanded="false" />
-            <element signature="e#12265#12266#0" expanded="false" />
-            <element signature="e#13206#13207#0" expanded="false" />
-            <element signature="e#13246#13247#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1437,21 +1286,128 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ComplexParamTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="460" column="5" selection-start-line="460" selection-start-column="5" selection-end-line="460" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/types/Call.java">
+    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/CallSchema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="460" column="5" selection-start-line="460" selection-start-column="5" selection-end-line="460" selection-end-column="5" />
+        <state relative-caret-position="180">
+          <caret line="81" column="73" selection-start-line="81" selection-start-column="73" selection-end-line="81" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/call.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Helpdesk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="428" column="9" selection-start-line="428" selection-start-column="9" selection-end-line="428" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/api/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/api/Helpdesk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="354" column="16" selection-start-line="354" selection-start-column="16" selection-end-line="354" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/XmlMethodCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="40" column="30" selection-start-line="40" selection-start-column="30" selection-end-line="40" selection-end-column="30" />
+          <folding>
+            <element signature="e#2826#2827#0" expanded="true" />
+            <element signature="e#2874#2875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/api/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="113" column="32" selection-start-line="113" selection-start-column="32" selection-end-line="113" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bittercreektech/xmlmc/tests/ConnectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/out/artifacts/xmlmc_jar/xmlmc.jar!/com/bittercreektech/xmlmc/XmlMethodCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xmlmc_test/src/EndToEnd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="27" column="85" selection-start-line="27" selection-start-column="85" selection-end-line="27" selection-end-column="85" />
+          <folding />
         </state>
       </provider>
     </entry>
