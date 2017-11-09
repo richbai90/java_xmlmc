@@ -176,6 +176,7 @@ public class Call implements SwType {
         Data data = xmlmc.data();
         if (priority != null) {
             param.addParameter("slaName", priority);
+            return;
         } else if (sla != null) {
             try {
                 Response priority_record = data.sqlQuery(Data.Database.SWDATA, "Select fk_priority from itsmsp_slad_matrix where" +

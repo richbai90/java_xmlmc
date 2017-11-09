@@ -5,25 +5,27 @@ import com.bittercreektech.xmlmc.api.Helpdesk;
 import com.bittercreektech.xmlmc.api.Session;
 
 import java.net.MalformedURLException;
+import java.security.NoSuchAlgorithmException;
 
 
 /**
  * XmlMethodCall.java
  * Purpose: Provide an interface to all the Xmlmc APIs.
- *
+ * <p>
  * The XmlMethodCall class provides easy access to all the Xmlmc API services and their respective methods.
  * It handles opening and closing the connection to the server automatically and parses the xml responses from the server
  * into easy to navigate ArrayLists or Hashes. It also manages the session cookie, both sending and receiving, as well
  * as updating as necessary, automatically. Interfacing with the API is best done through this class since it handles all the details automatically.
- *
- *<div><p>
+ * <p>
+ * <div><p>
  * Usage: <pre>{@code
  * xmlmc = new XmlMethodCall("localhost");
  * xmlmc.session().analystLogon("admin", "password");
  * xmlmc.helpdesk().acceptCalls("1557","1998");
  * xmlmc.analystLogoff();
  * }</pre>
- *</div>
+ * </div>
+ *
  * @author Rich Gordon
  * @version 1.1.0 08/29/2016
  */
@@ -33,25 +35,37 @@ public class XmlMethodCall {
 
     /**
      * Creates a connection to the server that can be used to send requests over the wire
+     *
      * @param server The hostname or ip address of the server you wish to send requests to
-     * @param debug Whether to print the request xml and response xml to the console
+     * @param debug  Whether to print the request xml and response xml to the console
      * @throws MalformedURLException If the Server is not a valid hostname or ip address
      */
-    public XmlMethodCall(String server, boolean debug) throws MalformedURLException {
-        connection = new Connection(server, debug);
+
+    protected XmlMethodCall(String server, int port, boolean debug, int forward, boolean secure) throws MalformedURLException {
+        connection = connect(server, port, debug, forward, secure);
+    }
+
+    public XmlMethodCall(String server, int port, boolean debug) throws MalformedURLException {
+        this(server, port, debug, 0, true);
     }
 
     /**
      * Creates a connection to the server that can be used to send requests over the wire. Sets debug to false.
+     *
      * @param server The hostname or ip address of the server you wish to send requests to
      * @throws MalformedURLException If the Server Is not a valid hostname or ip address.
      */
     public XmlMethodCall(String server) throws MalformedURLException {
-        this(server, false);
+        this(server, 5015, false);
+    }
+
+    public XmlMethodCall(String server, int port) throws MalformedURLException {
+        this(server, port, false);
     }
 
     /**
      * Provide access to the session methods from the XmlMethodCall object
+     *
      * @return an instance of the api.Session object.
      * @see Session
      */
@@ -61,6 +75,7 @@ public class XmlMethodCall {
 
     /**
      * Provide access to the helpdesk methods from the XmlMethodCall object
+     *
      * @return an instance of the api.Helpdesk object
      * @see Helpdesk
      */
@@ -70,6 +85,7 @@ public class XmlMethodCall {
 
     /**
      * Provide access to the data methods from the XmlMethodCall object
+     *
      * @return an instance of the api.Data object
      * @see Data
      */
@@ -81,4 +97,12 @@ public class XmlMethodCall {
         return connection.getSessionId();
     }
 
+
+    private Connection connect(String server, int port, boolean debug, int forward, boolean secure) throws MalformedURLException {
+        try {
+            return new Connection(server, port, debug, forward, secure);
+        } catch (NoSuchAlgorithmException e) {
+            return new Connection(server, port, debug);
+        }
+    }
 }

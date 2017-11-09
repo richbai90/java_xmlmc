@@ -1,5 +1,6 @@
 package com.bittercreektech.xmlmc;
 
+import javax.net.ssl.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -7,6 +8,9 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.security.cert.X509Certificate;
 
 /**
  * Connection.java
@@ -24,10 +28,57 @@ public class Connection {
     private String server;
     private String session = "";
     private boolean debug = false;
+    private boolean trustOnlySecureCerts = true;
+    private boolean https = false;
 
-    private Connection(String server, String port, boolean debug) throws MalformedURLException {
+    public Connection(String server, int port) throws MalformedURLException {
+        this.server = server;
+        connect(server, port, false);
+    }
+
+    public Connection(String server, int port, boolean debug) throws MalformedURLException {
         this.server = server;
         connect(server, port, debug);
+    }
+
+    protected Connection(String server, int port, boolean debug, int forward, boolean secure) throws MalformedURLException, NoSuchAlgorithmException {
+        this.server = server;
+        this.trustOnlySecureCerts = secure;
+
+        if(!trustOnlySecureCerts) {
+            // Create a trust manager that does not validate certificate chains
+            TrustManager[] trustAllCerts = new TrustManager[] {new X509TrustManager() {
+                public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+                    return null;
+                }
+                public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                }
+                public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                }
+            }
+            };
+
+            // Install the all-trusting trust manager
+            SSLContext sc = SSLContext.getInstance("SSL");
+            try {
+                sc.init(null, trustAllCerts, new java.security.SecureRandom());
+            } catch (KeyManagementException e) {
+                e.printStackTrace();
+            }
+            HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+            // Create all-trusting host name verifier
+            HostnameVerifier allHostsValid = new HostnameVerifier() {
+                public boolean verify(String hostname, SSLSession session) {
+                    return true;
+                }
+            };
+
+            // Install the all-trusting host verifier
+            HttpsURLConnection.setDefaultHostnameVerifier(allHostsValid);
+        }
+
+        connect(server, port, debug, forward);
     }
 
     /**
@@ -37,21 +88,37 @@ public class Connection {
      */
     public Connection(String server, boolean debug) throws MalformedURLException {
         this.server = server;
-
         connect(debug);
     }
 
-    private void connect(String server, String port, boolean debug) throws MalformedURLException {
+    private void connect(String server, int port, boolean debug, int forward) throws MalformedURLException {
         this.debug = debug;
         try {
-            endpoint = new URL(String.format("http://%s:%s", server, port));
+            String url;
+            switch (port) {
+                case 443:
+                    this.https = true;
+                    url = String.format("https://%s/sw/xmlmc/", server);
+                    break;
+                case 80:
+                    url = String.format("http://%s/sw/xmlmc/", server);
+                    break;
+                default:
+                    this.https = forward == 443;
+                    url = this.https ? String.format("https://%s:%d/sw/xmlmc/", server, port) : String.format("http://%s:%d", server, port);
+            }
+            endpoint = new URL(url);
         } catch (MalformedURLException e) {
             throw new MalformedURLException(String.format("Unable to make a connection to the server. The url %s appears to be malformed", endpoint));
         }
     }
 
+    private void connect(String server, int port, boolean debug) throws MalformedURLException {
+        connect(server, port, debug, 0);
+    }
+
     private void connect(boolean debug) throws MalformedURLException {
-        connect(server, "5015", debug);
+        connect(server, 5015, debug);
     }
 
     private void setSession(String session) {
@@ -75,9 +142,10 @@ public class Connection {
     }
 
     private Response sendRequest(String xmlRequest) throws IOException {
-        if(debug) {
+        if (debug) {
             System.out.println(xmlRequest);
         }
+
         connection = (HttpURLConnection) endpoint.openConnection();
         connection.setDoOutput(true); // Triggers POST.
         connection.setFixedLengthStreamingMode(xmlRequest.length()); //avoid chunking data
@@ -103,7 +171,7 @@ public class Connection {
 
         Response response = handleResponse();
         lastError = (response.getStatus().equalsIgnoreCase("ok")) ? "" : response.getLastError();
-        if(debug) {
+        if (debug) {
             System.out.println(response);
         }
         return response;
@@ -136,8 +204,15 @@ public class Connection {
         return lastError;
     }
 
+    public boolean isHttps() {
+        return https;
+    }
+
     public String toString() {
         return this.getEndpoint().toString();
     }
 
+    public boolean isTrustOnlySecureCerts() {
+        return trustOnlySecureCerts;
+    }
 }
